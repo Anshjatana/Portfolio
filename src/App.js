@@ -7,7 +7,7 @@ import Footer from './Components/Footer';
 
 function App() {
   const divStyle = {
-    background: "linear-gradient(180deg, rgba(1,11,29,1) 0%, rgba(2,8,37,1) 23%, rgba(6,3,38,0.969625350140056) 64%)"
+    background: "linear-gradient(180deg, rgba(1,7,20,1) 0%, rgba(1,6,27,1) 23%, rgba(13,1,29,0.9416141456582633) 64%)"
   };
   
   return (
