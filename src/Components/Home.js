@@ -1,6 +1,7 @@
 import React from "react";
 import ProfileImg from "../assets/Profile.png";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { Download } from 'lucide-react';
 import resume from "../assets/Ansh-latest-cv.pdf"
 const Home = () => {
   const [text] = useTypewriter({
@@ -28,7 +29,7 @@ const Home = () => {
           for challenges and collaborative work with fellow professionals.
         </p>
         <a href={resume} download="Resume">
-        <button className="bg-darkturquoise text-black p-2 rounded-md font-semibold mt-2  hover:scale-105 duration-200">Download Resume</button>
+        <button className="bg-[ivory] text-black p-2 rounded-md font-semibold mt-2 flex  hover:scale-105 duration-200"><Download className="mr-2"/>Download Resume</button>
         </a>
       </div>
       <div className="relative top-[200px] float-right right-[180px]">

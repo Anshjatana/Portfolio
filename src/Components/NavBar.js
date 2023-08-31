@@ -27,7 +27,7 @@ const NavBar = () => {
   return (
     <nav className="flex  items-center justify-between w-full text-white z-10 fixed   bg-[#010714] h-10 py-10 px-6">
     <div>
-        <h1 className="font-signature m-6  text-5xl font-bold cursor-pointer ">Ansh</h1>
+        <h1 className="font-signature m-6  text-5xl font-bold cursor-pointer hover:scale-110 duration-200 ">Ansh</h1>
       </div>
     
         <ul className="hidden sm:flex text-[#ffffffc7] mr-10">
