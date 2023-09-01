@@ -79,9 +79,10 @@ const About = () => {
           </div>
         </div>
       </div>
-      <h3 className="text-white text-[30px] font-semibold uppercase text-center mt-20">
-        TechStacks
+      <h3 className="text-white text-[30px] font-semibold uppercase text-center mt-[100px]">
+        experience
       </h3>
+      <p className="text-[20px] font-semibold text-center mt-2 text-[paleturquoise]">These are the technologies I've worked with</p>
       <div className="flex flex-wrap items-center justify-center mt-10 w-[70%]">
         <button className="hover:bg-white hover:text-black  flex items-center p-1.5 px-2 m-4 font-semibold rounded-md bg-gray-900 text-white">
           <AiFillHtml5 size={28} color="#E74625" />
