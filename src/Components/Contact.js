@@ -5,6 +5,7 @@ const Contact = () => {
     const initialFormData = {
         name: '',
         email: '',
+        subject:'',
         message: '',
       };
     const [formData, setFormData] = useState(initialFormData);
@@ -16,21 +17,21 @@ const Contact = () => {
     
       const handleSubmit = (e) => {
         e.preventDefault();
-        // Here, you can access the form data in the `formData` state and perform actions, such as sending it to a server.
         console.log(formData);
         setFormData(initialFormData)
       };
 
   return (
-    <div>
-      <h3 className="text-white text-[30px] font-semibold uppercase text-center my-10">Contact me</h3>
-      <p className="text-[18px] font-semibold  underline items-center justify-center mt-2 text-white flex"><Mail />{" "} anshjatana1111@gmail.com</p>
-      <p className="text-[19
-      
-      px] font-semibold font-[sans-serif]  items-center justify-center mt-4 text-white flex"><PhoneCall />+918168318198</p>
+    <div id='contact'>
+      <h3 className="text-white text-[30px] font-semibold uppercase text-center my-10">Get in touch</h3>
+      <div className='flex items-center justify-evenly mx-[290px] '>
+      <p className="text-[22px] font-semibold font-[sans-serif]   underline items-center justify-center mt-2 text-white flex"><Mail size={30} color='paleturquoise'/>anshjatana1111@gmail.com</p>
+      <p className="text-[24px] font-semibold font-[sans-serif]  items-center justify-center mt-4 text-white flex"><PhoneCall color='paleturquoise' size={30}/>+918168318198</p>
+      </div>
+        
       <form onSubmit={handleSubmit} className="space-y-4 my-10 flex flex-col items-center ">
         <div>
-          <label htmlFor="name" className="block text-gray-200">Name:</label>
+          <label htmlFor="name" className="block text-[20px] text-white font-medium">Name:</label>
           <input
             type="text"
             id="name"
@@ -38,12 +39,12 @@ const Contact = () => {
             value={formData.name}
             placeholder="Enter your Fullname"
             onChange={handleChange}
-            className="border rounded-md p-2 w-[400px]"
+            className="border rounded-md p-2 w-[450px]"
             required
           />
         </div>
         <div>
-          <label htmlFor="email" className="block text-gray-200">Email:</label>
+          <label htmlFor="email" className="block text-white text-[20px] font-medium">Email:</label>
           <input
             type="email"
             id="email"
@@ -51,26 +52,39 @@ const Contact = () => {
             value={formData.email}
             placeholder="Enter your Email"
             onChange={handleChange}
-            className="border rounded-md p-2 w-[400px]"
+            className="border rounded-md p-2 w-[450px]"
             required
           />
         </div>
         <div>
-          <label htmlFor="message" className="block text-gray-200">Message:</label>
+          <label htmlFor="name" className="block text-[20px] text-white font-medium">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            value={formData.subject}
+            placeholder="Enter Subject here"
+            onChange={handleChange}
+            className="border rounded-md p-2 w-[450px]"
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="message" className="block text-white text-[20px] font-medium">Message:</label>
           <textarea
             id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
             placeholder="Enter Message here"
-            className="border rounded-md p-2 w-[400px] h-32"
+            className="border rounded-md p-2 w-[450px] h-32"
             required
           />
         </div>
         <div>
           <button
             type="submit"
-            className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
+            className="bg-blue-500 text-white py-2 px-4 rounded-md mb-10 hover:bg-blue-600"
           >
             Lets Talk!
           </button>

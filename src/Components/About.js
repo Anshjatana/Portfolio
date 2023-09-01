@@ -18,7 +18,7 @@ const About = () => {
    
   return (
 
-    <div className="flex flex-col items-center justify-center mt-8">
+    <div className="flex flex-col items-center justify-center mt-8" id="about">
       <h6 className="text-white text-[15px] font-semibold uppercase text-center  ">
         
         Get to know

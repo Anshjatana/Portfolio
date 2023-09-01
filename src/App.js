@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <div style={divStyle} className='h-[5000px]'>
+      <div style={divStyle} className='h-full'>
         <Home />
         <About />
         <Projects />

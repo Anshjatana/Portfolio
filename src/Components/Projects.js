@@ -8,12 +8,12 @@ import NinjaStudio from "../assets/NinjaStudio.png";
 const Projects = () => {
    
   return (
-    <div>
+    <div id="projects">
       <h3 className="text-white text-[30px]  font-semibold uppercase text-center mt-20 ">
         Projects
       </h3>
       <p className="text-[20px] font-semibold text-center mt-2 text-[paleturquoise]">Check out some of my work right here</p>
-      <div className="flex justify-evenly my-16 mx-10 items-center">
+      <div className="flex justify-evenly my-24 mx-10 items-center">
         <img
           src={CollegeWebsite}
           alt="College website"
@@ -57,7 +57,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center my-16 mx-10 flex-row-reverse items-center">
+      <div className="flex justify-center my-24 mx-10 flex-row-reverse items-center">
         <img
           src={ExpenseApp}
           alt="ExpenseApp"
@@ -101,7 +101,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-evenly my-16 mx-10 items-center">
+      <div className="flex justify-evenly my-24 mx-10 items-center">
         <img
           src={WeatherApp}
           alt="College website"
@@ -144,7 +144,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center flex-row-reverse my-16 mx-10 items-center">
+      <div className="flex justify-center flex-row-reverse my-24 mx-10 items-center">
         <img
           src={NinjaStudio}
           alt="Ninja Studio"

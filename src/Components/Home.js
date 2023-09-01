@@ -12,7 +12,7 @@ const Home = () => {
   });
 
   return (
-    <footer className="h-[600px]">
+    <div className="h-[600px]" id="home">
       <div className="text-white w-[45%] absolute top-[190px] left-[130px]">
         <h1 className="text-[45px] font-semibold text-[#ff0044]">Hello!</h1>
         <h2 className="text-[40px] font-bold">I'm Ansh Jatana,</h2>
@@ -39,7 +39,7 @@ const Home = () => {
           className="w-[300px] rounded-lg z-9"
         />
       </div>
-    </footer>
+    </div>
   );
 };
 
