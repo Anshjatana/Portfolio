@@ -27,8 +27,8 @@ const About = () => {
         About Me
       </h3>
       <div className="flex  items-center justify-evenly ">
-        <img src={memoji} alt="memoji" className="h-[400px]" />
-        <div className="text-white text-[17px] w-[50%]  mt-[60px] ">
+        <img src={memoji} alt="memoji" className="h-[400px]" id="memoji" />
+        <div className="text-white text-[17px] w-[50%]  mt-[60px] " id="about-text">
           <p>
             Every day, I eagerly embrace the path of continuous learning,
             channeling my passion for Front-end Development to create
@@ -83,7 +83,7 @@ const About = () => {
         experience
       </h3>
       <p className="text-[20px] font-semibold text-center mt-2 text-[paleturquoise]">These are the technologies I've worked with</p>
-      <div className="flex flex-wrap items-center justify-center mt-10 w-[70%]">
+      <div className="flex flex-wrap items-center justify-center mt-10 w-[70%]" id="buttons">
         <button className="hover:bg-white hover:text-black  flex items-center p-1.5 px-2 m-4 font-semibold rounded-md bg-gray-900 text-white">
           <AiFillHtml5 size={28} color="#E74625" />
           HTML

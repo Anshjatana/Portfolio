@@ -6,6 +6,7 @@ import Projects from './Components/Projects';
 import Footer from './Components/Footer';
 import Contact from './Components/Contact';
 
+
 function App() {
   const divStyle = {
     background: "rgba(1,7,20,1)"
@@ -21,7 +22,7 @@ function App() {
         <Contact/>
         <Footer />
       </div>
-    </>
+      </>
   );
 }
 

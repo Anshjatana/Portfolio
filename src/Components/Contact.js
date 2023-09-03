@@ -24,9 +24,9 @@ const Contact = () => {
   return (
     <div id='contact'>
       <h3 className="text-white text-[30px] font-semibold uppercase text-center my-10">Get in touch</h3>
-      <div className='flex items-center justify-evenly mx-[290px] '>
-      <p className="text-[22px] font-semibold font-[sans-serif]   underline items-center justify-center mt-2 text-white flex"><Mail size={30} color='paleturquoise'/>anshjatana1111@gmail.com</p>
-      <p className="text-[24px] font-semibold font-[sans-serif]  items-center justify-center mt-4 text-white flex"><PhoneCall color='paleturquoise' size={30}/>+918168318198</p>
+      <div className='flex items-center justify-evenly mx-[290px] ' id='contacts'>
+      <p className="text-[22px] font-medium font-[sans-serif]   underline items-center justify-center mt-2 text-white flex"><Mail size={30} color='paleturquoise'/>anshjatana1111@gmail.com</p>
+      <p className="text-[24px] font-medium font-[sans-serif]  items-center justify-center mt-4 text-white flex"><PhoneCall color='paleturquoise' size={30}/>+918168318198</p>
       </div>
         
       <form onSubmit={handleSubmit} className="space-y-4 my-10 flex flex-col items-center ">

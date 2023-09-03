@@ -22,7 +22,7 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className=' w-full text-black     bg-[#d1d3d6] h-40  px-6'>
+    <footer className=' w-full text-black     bg-[#e7e7e7] h-40  px-6'>
       <div className='flex  items-center justify-between '>
       <div>
         <h1 className="font-signature m-6  text-5xl font-bold cursor-pointer hover:scale-110 duration-200 ">Ansh</h1>

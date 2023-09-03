@@ -14,16 +14,16 @@ const Home = () => {
   return (
     <div className="h-[600px]" id="home">
       <div className="text-white w-[45%] absolute top-[190px] left-[130px]">
-        <h1 className="text-[45px] font-semibold text-[#ff0044]">Hello!</h1>
-        <h2 className="text-[40px] font-bold">I'm Ansh Jatana,</h2>
-        <h3 className="text-[30px] text-[paleturquoise]">
-          A <span className="text-[30px] text-[paleturquoise]">{text}</span>
+        <h1 className="text-[45px] font-semibold text-[#ff0044]" id="greeting" >Hello!</h1>
+        <h2 className="text-[40px] font-bold" id="name">I'm Ansh Jatana,</h2>
+        <h3 className="text-[30px] text-[paleturquoise]" id="profile">
+          A <span className="text-[30px] text-[paleturquoise]" id="typewriter">{text}</span>
           <span>
             <Cursor  />
           </span>
         </h3>
 
-        <p className="text-[18px] my-4 text-[lightgray]">
+        <p className="text-[18px] my-4 text-[lightgray]" id="about-me">
           I possess a robust grasp of HTML, CSS, JavaScript, React.js and Redux. My
           proficiency lies in crafting captivating, user-centric websites. Eager
           for challenges and collaborative work with fellow professionals.
@@ -32,7 +32,7 @@ const Home = () => {
         <button className="bg-[ivory] text-black p-2 rounded-md font-semibold mt-2 flex  hover:scale-105 duration-200"><Download className="mr-2"/>Download Resume</button>
         </a>
       </div>
-      <div className="relative top-[200px] float-right right-[180px]">
+      <div className="relative top-[200px] float-right right-[180px]" id="hero-img">
         <img
           src={ProfileImg}
           alt="Profile img"

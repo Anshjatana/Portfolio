@@ -20,7 +20,7 @@ const Projects = () => {
           
           className="w-[40%] ml-10 mt-10 rounded-md hover:scale-110 duration-200"
         />
-        <div className="text-white text-[18px] w-[42%] mt-6">
+        <div className="text-white text-[18px] w-[42%] mt-6" id="project-text">
           <p className="font-bold text-[#ff0044] text-[20px]">
             Technology used: React.js, Tailwind CSS, Rapid APIs
           </p>
@@ -64,7 +64,7 @@ const Projects = () => {
           
           className="w-[40%] ml-10 mt-10 rounded-md hover:scale-110 duration-200"
         />
-        <div className="text-white text-[18px] w-[42%] mt-8">
+        <div className="text-white text-[18px] w-[42%] mt-8" id="project-text">
           <p className="font-bold text-[paleturquoise] text-[20px]">
             Technology used: React.js, Tailwind CSS
           </p>
@@ -107,7 +107,7 @@ const Projects = () => {
           alt="College website"
           className="w-[40%] ml-10 mt-10 rounded-md hover:scale-110 duration-200"
         />
-        <div className="text-white text-[18px] w-[42%] mt-8">
+        <div className="text-white text-[18px] w-[42%] mt-8" id="project-text">
           <p className="font-bold text-[#ff0044] text-[20px]">
             Technology used: HTML, CSS, JavaScript, Weather API
           </p>
@@ -151,7 +151,7 @@ const Projects = () => {
           
           className="w-[40%] ml-10 mt-10 rounded-md hover:scale-110 duration-200"
         />
-        <div className="text-white text-[18px] w-[42%] mt-10">
+        <div className="text-white text-[18px] w-[42%] mt-10" id="project-text">
           <p className="font-bold text-[paleturquoise] text-[20px]">
             Technology: HTML, CSS, JavaScript, Bootstrap
           </p>

@@ -12,3 +12,60 @@
     font-family: 'Raleway', sans-serif;
   }
 }
+
+
+/* Scrollbar Modification */
+::-webkit-scrollbar {
+  width: 9px; /* Adjust the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(1,7,20,1); /* Track background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.425); /* Thumb color */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.911); /* Thumb color on hover */
+}
+
+
+/* Media queries */
+@media (max-width:984px) {
+  #hero-img{
+    right:60px
+  }
+  #about-text{
+    font-size: 15px;
+  }
+  #buttons{
+    width: 85%;
+  }
+  #project-text{
+    font-size: 15px;
+  }
+  #memoji{
+    height: 300px;
+  }
+  #contacts{
+    margin: 0 100px;
+  }
+  #greeting{
+    font-size: 40px;
+  }
+  #name{
+    font-size: 35px;
+  }
+  #profile{
+    font-size: 25px;
+  }
+  #typewriter{
+    font-size: 25px;
+  }
+  #about-me{
+    font-size: 15px ;
+  }
+}
