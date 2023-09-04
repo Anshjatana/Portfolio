@@ -1,3 +1,3 @@
-Just completed my portfolio website.
+Developed my portfolio website.
 Link is given in the about section.
 Do check it out.
