@@ -1,37 +1,59 @@
-import React, { useState } from 'react';
-import { Mail,PhoneCall } from 'lucide-react';
+import React, { useState } from "react";
+import { Mail, PhoneCall } from "lucide-react";
 
 const Contact = () => {
-    const initialFormData = {
-        name: '',
-        email: '',
-        subject:'',
-        message: '',
-      };
-    const [formData, setFormData] = useState(initialFormData);
-    
-      const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
-      };
-    
-      const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(formData);
-        setFormData(initialFormData)
-      };
+  const initialFormData = {
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  };
+  const [formData, setFormData] = useState(initialFormData);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+    setFormData(initialFormData);
+  };
 
   return (
-    <div id='contact'>
-      <h3 className="text-white text-[30px] font-semibold uppercase text-center my-10">Get in touch</h3>
-      <div className='flex items-center justify-evenly mx-[290px] ' id='contacts'>
-      <p className="text-[22px] font-medium font-[sans-serif]   underline items-center justify-center mt-2 text-white flex"><Mail size={30} color='paleturquoise'/>anshjatana1111@gmail.com</p>
-      <p className="text-[24px] font-medium font-[sans-serif]  items-center justify-center mt-4 text-white flex"><PhoneCall color='paleturquoise' size={30}/>+918168318198</p>
+    <div id="contact">
+      <h3
+        className="text-white text-[30px] font-semibold uppercase text-center my-10"
+        id="heading"
+      >
+        Get in touch
+      </h3>
+      <div
+        className="flex items-center justify-evenly mx-[290px] "
+        id="contacts"
+      >
+        <p className="text-[22px] font-medium font-[sans-serif]   underline items-center justify-center mt-2 text-white flex">
+          <Mail size={30} color="paleturquoise" id="icon" />
+          anshjatana1111@gmail.com
+        </p>
+        <p className="text-[24px] font-medium font-[sans-serif]  items-center justify-center mt-4 text-white flex">
+          <PhoneCall color="paleturquoise" size={30} id="icon" />
+          +918168318198
+        </p>
       </div>
-        
-      <form onSubmit={handleSubmit} className="space-y-4 my-10 flex flex-col items-center ">
+
+      <form
+        onSubmit={handleSubmit}
+        className="space-y-4 my-10 flex flex-col items-center "
+      >
         <div>
-          <label htmlFor="name" className="block text-[20px] text-white font-medium">Name:</label>
+          <label
+            htmlFor="name"
+            className="block text-[20px] text-white font-medium"
+          >
+            Name:
+          </label>
           <input
             type="text"
             id="name"
@@ -44,7 +66,12 @@ const Contact = () => {
           />
         </div>
         <div>
-          <label htmlFor="email" className="block text-white text-[20px] font-medium">Email:</label>
+          <label
+            htmlFor="email"
+            className="block text-white text-[20px] font-medium"
+          >
+            Email:
+          </label>
           <input
             type="email"
             id="email"
@@ -57,7 +84,12 @@ const Contact = () => {
           />
         </div>
         <div>
-          <label htmlFor="name" className="block text-[20px] text-white font-medium">Subject:</label>
+          <label
+            htmlFor="name"
+            className="block text-[20px] text-white font-medium"
+          >
+            Subject:
+          </label>
           <input
             type="text"
             id="subject"
@@ -70,7 +102,12 @@ const Contact = () => {
           />
         </div>
         <div>
-          <label htmlFor="message" className="block text-white text-[20px] font-medium">Message:</label>
+          <label
+            htmlFor="message"
+            className="block text-white text-[20px] font-medium"
+          >
+            Message:
+          </label>
           <textarea
             id="message"
             name="message"
@@ -90,10 +127,8 @@ const Contact = () => {
           </button>
         </div>
       </form>
-      
-     
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

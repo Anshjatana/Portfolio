@@ -6,18 +6,28 @@ import WeatherApp from "../assets/WeatherApp.png";
 import NinjaStudio from "../assets/NinjaStudio.png";
 
 const Projects = () => {
-   
   return (
     <div id="projects">
-      <h3 className="text-white text-[30px]  font-semibold uppercase text-center mt-20 ">
+      <h3
+        className="text-white text-[30px]  font-semibold uppercase text-center mt-20 "
+        id="heading"
+      >
         Projects
       </h3>
-      <p className="text-[20px] font-semibold text-center mt-2 text-[paleturquoise]">Check out some of my work right here</p>
-      <div className="flex justify-evenly my-24 mx-10 items-center">
+      <p
+        className="text-[20px] font-semibold text-center mt-2 text-[paleturquoise]"
+        id="exp-line"
+      >
+        Check out some of my work right here
+      </p>
+      <div
+        className="flex justify-evenly mb-24 mt-12 mx-4 items-center"
+        id="project-div"
+      >
         <img
           src={CollegeWebsite}
           alt="College website"
-          
+          id="project-img13"
           className="w-[40%] ml-10 mt-10 rounded-md hover:scale-110 duration-200"
         />
         <div className="text-white text-[18px] w-[42%] mt-6" id="project-text">
@@ -38,9 +48,9 @@ const Projects = () => {
             Added Responsiveness by using Tailwind CSS Media Queries
           </p>
           <br />
-          <div className="flex justify-evenly w-[290px]">
+          <div className="flex justify-evenly w-[290px]" id="project-buttons">
             <a href="https://arsd-dummy-ansh.netlify.app/" target="blank">
-              <button className="flex bg-white p-1.5 font-semibold text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
+              <button className="flex items-center bg-white p-1.5 font-semibold text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
                 <Link />
                 Live URL
               </button>
@@ -49,7 +59,7 @@ const Projects = () => {
               href="https://github.com/Anshjatana/CollegeWebsite"
               target="blank"
             >
-              <button className="flex bg-white font-semibold p-1.5 text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
+              <button className="flex items-center bg-white font-semibold p-1.5 text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
                 <Github />
                 GitHub Link
               </button>
@@ -57,11 +67,14 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center my-24 mx-10 flex-row-reverse items-center">
+      <div
+        className="flex justify-center my-24 mx-10 flex-row-reverse items-center"
+        id="project-div"
+      >
         <img
           src={ExpenseApp}
           alt="ExpenseApp"
-          
+          id="project-img24"
           className="w-[40%] ml-10 mt-10 rounded-md hover:scale-110 duration-200"
         />
         <div className="text-white text-[18px] w-[42%] mt-8" id="project-text">
@@ -82,9 +95,9 @@ const Projects = () => {
             Also we can search it by Expense name.
           </p>
           <br />
-          <div className="flex justify-evenly w-[290px]">
+          <div className="flex justify-evenly w-[290px]" id="project-buttons">
             <a href="https://expense-tracker-ansh.netlify.app/" target="blank">
-              <button className="flex bg-white p-1.5 font-semibold text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
+              <button className="flex items-center bg-white p-1.5 font-semibold text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
                 <Link />
                 Live URL
               </button>
@@ -93,7 +106,7 @@ const Projects = () => {
               href="https://github.com/Anshjatana/Expense-Tracker-app"
               target="blank"
             >
-              <button className="flex bg-white font-semibold p-1.5 text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
+              <button className="flex items-center bg-white font-semibold p-1.5 text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
                 <Github />
                 GitHub Link
               </button>
@@ -101,10 +114,14 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-evenly my-24 mx-10 items-center">
+      <div
+        className="flex justify-evenly my-24 mx-10 items-center"
+        id="project-div"
+      >
         <img
           src={WeatherApp}
-          alt="College website"
+          alt="Weather App"
+          id="project-img13"
           className="w-[40%] ml-10 mt-10 rounded-md hover:scale-110 duration-200"
         />
         <div className="text-white text-[18px] w-[42%] mt-8" id="project-text">
@@ -125,18 +142,15 @@ const Projects = () => {
             This endpoint returns a search result based on a location..
           </p>
           <br />
-          <div className="flex justify-evenly w-[290px]">
+          <div className="flex justify-evenly  w-[290px]" id="project-buttons">
             <a href="https://weatherapp-ansh.netlify.app/" target="blank">
-              <button className="flex bg-white p-1.5 font-semibold text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200" >
+              <button className="flex items-center bg-white p-1.5 font-semibold text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
                 <Link />
                 Live URL
               </button>
             </a>
-            <a
-              href="https://github.com/Anshjatana/Weather-app"
-              target="blank"
-            >
-              <button className="flex bg-white font-semibold p-1.5 text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
+            <a href="https://github.com/Anshjatana/Weather-app" target="blank">
+              <button className="flex items-center bg-white font-semibold p-1.5 text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
                 <Github />
                 GitHub Link
               </button>
@@ -144,11 +158,14 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center flex-row-reverse my-24 mx-10 items-center">
+      <div
+        className="flex justify-center flex-row-reverse my-24 mx-10 items-center"
+        id="project-div"
+      >
         <img
           src={NinjaStudio}
           alt="Ninja Studio"
-          
+          id="project-img24"
           className="w-[40%] ml-10 mt-10 rounded-md hover:scale-110 duration-200"
         />
         <div className="text-white text-[18px] w-[42%] mt-10" id="project-text">
@@ -169,16 +186,19 @@ const Projects = () => {
             Added play/pause and next/previous functionality to the player
             section.
           </p>
-          
+
           <p className="flex mt-2">
             <ArrowRight />
             Ensured good code quality in terms of using classes, proper names
             for classes/variables.
           </p>
           <br />
-          <div className="flex justify-evenly w-[290px]">
+          <div
+            className="flex justify-evenly items-center w-[290px]"
+            id="project-buttons"
+          >
             <a href="https://ninjastudio-ansh.netlify.app/" target="blank">
-              <button className="flex bg-white p-1.5 font-semibold text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
+              <button className="flex items-center bg-white p-1.5 font-semibold text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
                 <Link />
                 Live URL
               </button>
@@ -187,7 +207,7 @@ const Projects = () => {
               href="https://github.com/Anshjatana/NINJA-STUDIO-HTML-CSS-JS"
               target="blank"
             >
-              <button className="flex bg-white font-semibold p-1.5 text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
+              <button className="flex items-center bg-white font-semibold p-1.5 text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
                 <Github />
                 GitHub Link
               </button>
