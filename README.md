@@ -1,1 +1,3 @@
-Developing my Portfolio.   Currently in Progress!!!  
+Developed my portfolio website.
+Link is given in the about section.
+Do check it out.
