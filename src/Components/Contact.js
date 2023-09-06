@@ -20,7 +20,9 @@ const Contact = () => {
     console.log(formData);
     setFormData(initialFormData);
   };
-
+  const handlebuttonclick = () => {
+    alert("Form submitted successfully");
+  };
   return (
     <div id="contact">
       <h3
@@ -122,6 +124,7 @@ const Contact = () => {
           <button
             type="submit"
             className="bg-blue-500 text-white py-2 px-4 rounded-md mb-10 hover:bg-blue-600"
+            onClick={handlebuttonclick}
           >
             Lets Talk!
           </button>
