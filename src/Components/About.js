@@ -9,10 +9,10 @@ import {
   SiBootstrap,
   SiCanva,
 } from "react-icons/si";
-import { BiLogoJavascript } from "react-icons/bi";
+import { BiLogoJavascript, BiLogoTypescript} from "react-icons/bi";
 import { FaReact } from "react-icons/fa";
-import { TbBrandVscode } from "react-icons/tb";
-import { BsWordpress, BsGit } from "react-icons/bs";
+import { TbBrandVscode , TbBrandNextjs} from "react-icons/tb";
+import {  BsGit } from "react-icons/bs";
 
 const About = () => {
   return (
@@ -42,7 +42,7 @@ const About = () => {
             , my fascination with crafting frontend marvels guides me. I've
             transformed myself into a{" "}
             <span className="font-bold text-[#ff0044]">self-taught coder</span>,
-            conquering HTML, CSS, JavaScript, React.js and Redux against all
+            conquering HTML, CSS, JavaScript, React.js and Next.js against all
             odds.
           </p>
           <br />
@@ -118,6 +118,14 @@ const About = () => {
           React.js
         </button>
         <button className="hover:bg-white hover:text-black flex items-center p-1.5 px-2 m-4 font-semibold rounded-md bg-gray-900 text-white">
+          <TbBrandNextjs size={28} color="gray" id="icon" />
+          Next.js
+        </button>
+        <button className="hover:bg-white hover:text-black flex items-center p-1.5 px-2 m-4 font-semibold rounded-md bg-gray-900 text-white">
+          <BiLogoTypescript size={28} color="#2F74C0" id="icon" />
+          TypeScript
+        </button>
+        <button className="hover:bg-white hover:text-black flex items-center p-1.5 px-2 m-4 font-semibold rounded-md bg-gray-900 text-white">
           <SiRedux size={28} color="#684CB2" id="icon" />
           Redux
         </button>
@@ -137,10 +145,7 @@ const About = () => {
           <AiFillGithub size={28} color="darkgray" id="icon" />
           GitHub
         </button>
-        <button className="hover:bg-white hover:text-black flex  items-center p-1.5 px-2 m-4 font-semibold rounded-md bg-gray-900 text-white">
-          <BsWordpress size={28} color="#63A4B9" id="icon" />
-          Wordpress
-        </button>
+        
         <button className="hover:bg-white hover:text-black flex items-center p-1.5 px-2 m-4 font-semibold rounded-md bg-gray-900 text-white">
           <TbBrandVscode size={28} color="#24ABF2" id="icon" />
           VS Code

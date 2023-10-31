@@ -21,7 +21,7 @@
   background: rgba(1, 7, 20, 1); /* Track background color */
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(
     180deg,
     rgba(252, 0, 62, 1) 0%,
@@ -33,8 +33,9 @@
   border-radius: 10px; /* Rounded corners for the thumb */
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.911); /* Thumb color on hover */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.911);
+  border-radius: 10px; /* Thumb color on hover */
 }
 
 /* Media queries */
@@ -150,9 +151,9 @@
     height: 500px;
   }
   #hero-img {
-    right: 75px;
+    right: 30px;
     width: 170px;
-  }
+}
   #greeting {
     font-size: 30px;
   }
@@ -202,13 +203,16 @@
   #project-div {
     flex-direction: column;
   }
+  #Project-heading{
+    font-size: 1.3rem;
+  }
   #project-img13 {
-    width: 65%;
+    width: 75%;
     margin-top: 1.5rem;
     margin-left: 0px;
   }
   #project-img24 {
-    width: 65%;
+    width: 75%;
     margin-top: 1.5rem;
     margin-left: 0px;
   }
@@ -248,15 +252,39 @@
   }
   #home div:first-child {
     top: 119px;
-    left: 80px;
-    width: 68%;
-  }
+    width: 72%;
+    left: 14%;
+    text-align: center;
+}
+#download-btn {
+  font-size: 11px;
+  padding: 5px;
+  margin: auto;
+}
   #home {
     height: 420px;
   }
   #about-div {
     flex-direction: column;
-  }
+    text-align: center;
+}
+#about-text div {
+  width: 75%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Project-heading{
+  font-size: 1.5rem;
+}
+#project-text {
+    width: 80%;
+    text-align: center;
+}
+.icons {
+  width: 45px;
+}
   #about-text {
     width: 75%;
   }

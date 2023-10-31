@@ -1,11 +1,13 @@
 import React from "react";
-import ProfileImg from "../assets/Profile.png";
+import ProfileImg from "../assets/Profile.avif";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Download } from "lucide-react";
 import resume from "../assets/Ansh-latest-cv.pdf";
+
+
 const Home = () => {
   const [text] = useTypewriter({
-    words: ["Frontend developer", "React developer"],
+    words: ["Frontend developer", "React.js developer" , "Next.js developer"],
     loop: {},
     typeSpeed: 80,
     deleteSpeed: 50,
@@ -31,9 +33,7 @@ const Home = () => {
         </h3>
 
         <p className="text-[18px] my-4 text-[lightgray]" id="about-me">
-          I possess a robust grasp of HTML, CSS, JavaScript, React.js and Redux.
-          My proficiency lies in crafting captivating, user-centric websites.
-          Eager for challenges and collaborative work with fellow professionals.
+        Proficient in HTML, CSS, JavaScript, React.js, and exploring Next.js, TypeScript. Specialize in crafting user-centric websites. Excited for collaborative challenges with professionals.
         </p>
         <a href={resume} download="Resume">
           <button

@@ -1,9 +1,9 @@
 import React from "react";
 import { ArrowRight, Link, Github } from "lucide-react";
-import CollegeWebsite from "../assets/CollegeWebsite.png";
-import ExpenseApp from "../assets/Expense-app.png";
-import WeatherApp from "../assets/WeatherApp.png";
-import NinjaStudio from "../assets/NinjaStudio.png";
+import CollegeWebsite from "../assets/CollegeWebsite.avif";
+import ExpenseApp from "../assets/Expense-app.avif";
+import RegistrationInterface from "../assets/RegistrationInterface.avif";
+import NinjaStudio from "../assets/NinjaStudio.avif";
 
 const Projects = () => {
   return (
@@ -20,10 +20,12 @@ const Projects = () => {
       >
         Check out some of my work right here
       </p>
+      
       <div
         className="flex justify-evenly mb-24 mt-12 mx-4 items-center"
         id="project-div"
       >
+      
         <img
           src={CollegeWebsite}
           alt="College website"
@@ -31,7 +33,8 @@ const Projects = () => {
           className="w-[40%] ml-10 mt-10 rounded-md hover:scale-110 duration-200"
         />
         <div className="text-white text-[18px] w-[42%] mt-6" id="project-text">
-          <p className="font-bold text-[#ff0044] text-[20px]">
+        <h3 className="text-[32px] font-bold mb-2 " id="Project-heading">College website</h3>
+          <p className="font-bold text-[#ff0044] text-[16px]">
             Technology used: React.js, Tailwind CSS, Rapid APIs
           </p>
           <p className="flex mt-6">
@@ -78,7 +81,8 @@ const Projects = () => {
           className="w-[40%] ml-10 mt-10 rounded-md hover:scale-110 duration-200"
         />
         <div className="text-white text-[18px] w-[42%] mt-8" id="project-text">
-          <p className="font-bold text-[paleturquoise] text-[20px]">
+        <h3 className="text-[32px] font-bold mb-2 " id="Project-heading">Expense Tracker App</h3>
+          <p className="font-bold text-[paleturquoise] text-[16px]">
             Technology used: React.js, Tailwind CSS
           </p>
           <p className="flex mt-6">
@@ -119,37 +123,37 @@ const Projects = () => {
         id="project-div"
       >
         <img
-          src={WeatherApp}
-          alt="Weather App"
+          src={RegistrationInterface}
+          alt="RegistrationInterface"
           id="project-img13"
           className="w-[40%] ml-10 mt-10 rounded-md hover:scale-110 duration-200"
         />
         <div className="text-white text-[18px] w-[42%] mt-8" id="project-text">
-          <p className="font-bold text-[#ff0044] text-[20px]">
-            Technology used: HTML, CSS, JavaScript, Weather API
+        <h3 className="text-[32px] font-bold mb-2 " id="Project-heading">Event Registration Interface</h3>
+          <p className="font-bold text-[#ff0044] text-[16px]">
+            Technology used: React.js
           </p>
           <p className="flex mt-6">
             <ArrowRight />
-            Created a weather app using Openweathermap API to fetch the weather
-            details
+            Created interactive event registration in React.js, ensuring seamless user experience and robust form validation.
           </p>
           <p className="flex mt-2">
             <ArrowRight />
-            Fetched Weather Data from the rapid API
+            Developed a Registered Users List displaying names with timestamps, offering a user-friendly "View Details" option via a popup.
           </p>
           <p className="flex mt-2">
             <ArrowRight />
-            This endpoint returns a search result based on a location..
+            Implemented Local Storage for persistent data storage, ensuring efficient data retrieval and display upon application state updates.
           </p>
           <br />
           <div className="flex justify-evenly  w-[290px]" id="project-buttons">
-            <a href="https://weatherapp-ansh.netlify.app/" target="blank">
+            <a href="https://registration-interface-ansh.netlify.app/" target="blank">
               <button className="flex items-center bg-white p-1.5 font-semibold text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
                 <Link />
                 Live URL
               </button>
             </a>
-            <a href="https://github.com/Anshjatana/Weather-app" target="blank">
+            <a href="https://github.com/Anshjatana/Event-Registration-Interface" target="blank">
               <button className="flex items-center bg-white font-semibold p-1.5 text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
                 <Github />
                 GitHub Link
@@ -169,7 +173,9 @@ const Projects = () => {
           className="w-[40%] ml-10 mt-10 rounded-md hover:scale-110 duration-200"
         />
         <div className="text-white text-[18px] w-[42%] mt-10" id="project-text">
-          <p className="font-bold text-[paleturquoise] text-[20px]">
+        <h3 className="text-[32px] font-bold mb-2 " id="Project-heading">Ninja Studio</h3>
+          <p className="font-bold text-[paleturquoise] text-[16px]">
+
             Technology: HTML, CSS, JavaScript, Bootstrap
           </p>
           <p className="flex mt-6">
