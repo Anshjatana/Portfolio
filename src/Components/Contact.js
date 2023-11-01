@@ -46,7 +46,7 @@ const Contact = () => {
       </div>
 
       <form 
-        name="contact" method="POST" data-netlify="true" netlify
+        name="contact" method="POST" netlify
         onSubmit={handleSubmit}
         className="space-y-4 my-10 flex flex-col items-center "
       >
