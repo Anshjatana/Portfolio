@@ -46,7 +46,7 @@ const Contact = () => {
       </div>
 
       <form 
-        name="contact" method="post" data-netlify="true"   
+        action="https://formspree.io/f/mqkvvkyr"  method="POST"   
         onSubmit={handleSubmit}
         className="space-y-4 my-10 flex flex-col items-center "
       >
