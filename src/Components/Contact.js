@@ -15,14 +15,22 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
-    setFormData(initialFormData);
+    const { name, email, subject, message } = formData;
+    const response = fetch(
+      "https://portfolio-899b6-default-rtdb.firebaseio.com/Data.json",
+      { method: "POST", headers: { "Content-type": "application/json" },
+    body:JSON.stringify({
+      name, email, subject, message
+    }) }
+    );
+    if(response){
+      alert("Form submitted successfully")
+    }
+    setFormData(initialFormData)
   };
-  const handlebuttonclick = () => {
-    alert("Form submitted successfully");
-  };
+  
   return (
     <div id="contact">
       <h3
@@ -45,8 +53,8 @@ const Contact = () => {
         </p>
       </div>
 
-      <form 
-        action="https://formspree.io/f/mqkvvkyr"  method="POST"   
+      <form
+        name="contact"
         onSubmit={handleSubmit}
         className="space-y-4 my-10 flex flex-col items-center "
       >
@@ -125,7 +133,7 @@ const Contact = () => {
           <button
             type="submit"
             className="bg-blue-500 text-white py-2 px-4 rounded-md mb-10 hover:bg-blue-600"
-            onClick={handlebuttonclick}
+            
           >
             Lets Talk!
           </button>
