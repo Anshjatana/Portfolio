@@ -2,7 +2,7 @@ import React from "react";
 import { ArrowRight, Link, Github } from "lucide-react";
 import CollegeWebsite from "../assets/CollegeWebsite.avif";
 import ExpenseApp from "../assets/Expense-app.avif";
-import RegistrationInterface from "../assets/RegistrationInterface.avif";
+import CryptoBazar from "../assets/CryptoBazar.avif";
 import NinjaStudio from "../assets/NinjaStudio.avif";
 
 const Projects = () => {
@@ -20,46 +20,54 @@ const Projects = () => {
       >
         Check out some of my work right here
       </p>
-      
+
       <div
-        className="flex justify-evenly mb-24 mt-12 mx-4 items-center"
+        className="flex justify-evenly my-24 mx-10 items-center"
         id="project-div"
       >
-      
         <img
-          src={CollegeWebsite}
-          alt="College website"
+          src={CryptoBazar}
+          alt="CryptoBazar"
           id="project-img13"
           className="w-[40%] ml-10 mt-10 rounded-md hover:scale-110 duration-200"
         />
-        <div className="text-white text-[18px] w-[42%] mt-6" id="project-text">
-        <h3 className="text-[32px] font-bold mb-2 " id="Project-heading">College website</h3>
+        <div className="text-white text-[18px] w-[42%] mt-8" id="project-text">
+          <h3 className="text-[32px] font-bold mb-2 " id="Project-heading">
+            CryptoBazar
+          </h3>
           <p className="font-bold text-[#ff0044] text-[16px]">
-            Technology used: React.js, Tailwind CSS, Rapid APIs
+            Technology used: React.js, Tailwind CSS, CoinGecko APIs
           </p>
           <p className="flex mt-6">
             <ArrowRight />
-            Created a College dummy website using React.js and Tailwind CSS
+            CryptoBazar presents a diverse selection of 10 cryptocurrencies on
+            its homepage, offering real-time data and trends to users
           </p>
           <p className="flex mt-2">
             <ArrowRight />
-            Added Graphs using Fetch API, Table with filters and Cards using
-            props.
+            Providing in-depth insights, CryptoBazar includes dedicated routes
+            to individual coin pages, allowing users to study comprehensive
+            market data for each cryptocurrency
           </p>
           <p className="flex mt-2">
             <ArrowRight />
-            Added Responsiveness by using Tailwind CSS Media Queries
+            Enhancing user experience, CryptoBazar offers both light and dark
+            theme modes, ensuring accessibility and personalized preferences for
+            every user.
           </p>
           <br />
-          <div className="flex justify-evenly w-[290px]" id="project-buttons">
-            <a href="https://arsd-dummy-ansh.netlify.app/" target="blank">
+          <div className="flex justify-evenly  w-[290px]" id="project-buttons">
+            <a
+              href="https://cryptobazar-ansh.netlify.app/"
+              target="blank"
+            >
               <button className="flex items-center bg-white p-1.5 font-semibold text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
                 <Link />
                 Live URL
               </button>
             </a>
             <a
-              href="https://github.com/Anshjatana/CollegeWebsite"
+              href="https://github.com/Anshjatana/CryptoBazar"
               target="blank"
             >
               <button className="flex items-center bg-white font-semibold p-1.5 text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
@@ -81,7 +89,9 @@ const Projects = () => {
           className="w-[40%] ml-10 mt-10 rounded-md hover:scale-110 duration-200"
         />
         <div className="text-white text-[18px] w-[42%] mt-8" id="project-text">
-        <h3 className="text-[32px] font-bold mb-2 " id="Project-heading">Expense Tracker App</h3>
+          <h3 className="text-[32px] font-bold mb-2 " id="Project-heading">
+            Expense Tracker App
+          </h3>
           <p className="font-bold text-[paleturquoise] text-[16px]">
             Technology used: React.js, Tailwind CSS
           </p>
@@ -119,41 +129,47 @@ const Projects = () => {
         </div>
       </div>
       <div
-        className="flex justify-evenly my-24 mx-10 items-center"
+        className="flex justify-evenly mb-24 mt-12 mx-4 items-center"
         id="project-div"
       >
         <img
-          src={RegistrationInterface}
-          alt="RegistrationInterface"
+          src={CollegeWebsite}
+          alt="College website"
           id="project-img13"
           className="w-[40%] ml-10 mt-10 rounded-md hover:scale-110 duration-200"
         />
-        <div className="text-white text-[18px] w-[42%] mt-8" id="project-text">
-        <h3 className="text-[32px] font-bold mb-2 " id="Project-heading">Event Registration Interface</h3>
+        <div className="text-white text-[18px] w-[42%] mt-6" id="project-text">
+          <h3 className="text-[32px] font-bold mb-2 " id="Project-heading">
+            College website
+          </h3>
           <p className="font-bold text-[#ff0044] text-[16px]">
-            Technology used: React.js
+            Technology used: React.js, Tailwind CSS, Rapid APIs
           </p>
           <p className="flex mt-6">
             <ArrowRight />
-            Created interactive event registration in React.js, ensuring seamless user experience and robust form validation.
+            Created a College dummy website using React.js and Tailwind CSS
           </p>
           <p className="flex mt-2">
             <ArrowRight />
-            Developed a Registered Users List displaying names with timestamps, offering a user-friendly "View Details" option via a popup.
+            Added Graphs using Fetch API, Table with filters and Cards using
+            props.
           </p>
           <p className="flex mt-2">
             <ArrowRight />
-            Implemented Local Storage for persistent data storage, ensuring efficient data retrieval and display upon application state updates.
+            Added Responsiveness by using Tailwind CSS Media Queries
           </p>
           <br />
-          <div className="flex justify-evenly  w-[290px]" id="project-buttons">
-            <a href="https://registration-interface-ansh.netlify.app/" target="blank">
+          <div className="flex justify-evenly w-[290px]" id="project-buttons">
+            <a href="https://arsd-dummy-ansh.netlify.app/" target="blank">
               <button className="flex items-center bg-white p-1.5 font-semibold text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
                 <Link />
                 Live URL
               </button>
             </a>
-            <a href="https://github.com/Anshjatana/Event-Registration-Interface" target="blank">
+            <a
+              href="https://github.com/Anshjatana/CollegeWebsite"
+              target="blank"
+            >
               <button className="flex items-center bg-white font-semibold p-1.5 text-black rounded-md hover:bg-gray-300 hover:scale-105 duration-200">
                 <Github />
                 GitHub Link
@@ -162,6 +178,8 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      
+      
       <div
         className="flex justify-center flex-row-reverse my-24 mx-10 items-center"
         id="project-div"
@@ -173,9 +191,10 @@ const Projects = () => {
           className="w-[40%] ml-10 mt-10 rounded-md hover:scale-110 duration-200"
         />
         <div className="text-white text-[18px] w-[42%] mt-10" id="project-text">
-        <h3 className="text-[32px] font-bold mb-2 " id="Project-heading">Ninja Studio</h3>
+          <h3 className="text-[32px] font-bold mb-2 " id="Project-heading">
+            Ninja Studio
+          </h3>
           <p className="font-bold text-[paleturquoise] text-[16px]">
-
             Technology: HTML, CSS, JavaScript, Bootstrap
           </p>
           <p className="flex mt-6">
