@@ -43,12 +43,12 @@ const Contact = () => {
         className="flex items-center justify-evenly mx-[290px] "
         id="contacts"
       >
-        <p className="text-[22px] font-medium font-[sans-serif]   underline items-center justify-center mt-2 text-white flex">
-          <Mail size={30} color="paleturquoise" id="icon" />
+        <p className="text-[22px] font-medium font-[sans-serif]  items-center justify-center mt-2 text-white flex">
+          <Mail size={30} color="paleturquoise" id="icon" className="mr-2" />
           anshjatana1111@gmail.com
         </p>
         <p className="text-[24px] font-medium font-[sans-serif]  items-center justify-center mt-4 text-white flex">
-          <PhoneCall color="paleturquoise" size={30} id="icon" />
+          <PhoneCall color="paleturquoise" size={30} id="icon" className="mr-2" />
           +918168318198
         </p>
       </div>

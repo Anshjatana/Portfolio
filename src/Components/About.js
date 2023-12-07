@@ -9,10 +9,10 @@ import {
   SiBootstrap,
   SiCanva,
 } from "react-icons/si";
-import { BiLogoJavascript, BiLogoTypescript} from "react-icons/bi";
+import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
 import { FaReact } from "react-icons/fa";
-import { TbBrandVscode , TbBrandNextjs} from "react-icons/tb";
-import {  BsGit } from "react-icons/bs";
+import { TbBrandVscode, TbBrandNextjs } from "react-icons/tb";
+import { BsGit } from "react-icons/bs";
 
 const About = () => {
   return (
@@ -35,13 +35,10 @@ const About = () => {
           <p>
             Every day, I eagerly embrace the path of continuous learning,
             channeling my passion for Front-end Development to create
-            captivating digital experiences. Coming from a{" "}
-            <span className="font-bold text-[#ff0044]">
-              Non-tech background
-            </span>
-            , my fascination with crafting frontend marvels guides me. I've
+            captivating digital experiences. Coming from a Non-tech background ,
+            my fascination with crafting frontend marvels guides me. I've
             transformed myself into a{" "}
-            <span className="font-bold text-[#ff0044]">self-taught coder</span>,
+            <span className="font-bold text-[#ff0044]">Self-taught coder</span>,
             conquering HTML, CSS, JavaScript, React.js and Next.js against all
             odds.
           </p>
@@ -145,7 +142,7 @@ const About = () => {
           <AiFillGithub size={28} color="darkgray" id="icon" />
           GitHub
         </button>
-        
+
         <button className="hover:bg-white hover:text-black flex items-center p-1.5 px-2 m-4 font-semibold rounded-md bg-gray-900 text-white">
           <TbBrandVscode size={28} color="#24ABF2" id="icon" />
           VS Code
