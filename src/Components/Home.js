@@ -2,7 +2,7 @@ import React from "react";
 import ProfileImg from "../assets/Profile.avif";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Download } from "lucide-react";
-import resume from "../assets/Ansh-latest-cv.pdf";
+import resume from "../assets/Resume.pdf";
 
 
 const Home = () => {
