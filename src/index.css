@@ -14,7 +14,7 @@
 
 /* Scrollbar Modification */
 ::-webkit-scrollbar {
-  width: 9px; /* Adjust the width of the scrollbar */
+  width: 6px; /* Adjust the width of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
@@ -22,14 +22,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(
-    180deg,
-    rgba(252, 0, 62, 1) 0%,
-    rgba(106, 161, 168, 1) 25%,
-    rgba(255, 255, 255, 0.9416141456582633) 50%,
-    rgba(106, 161, 168, 1) 75%,
-    rgba(252, 0, 62, 1) 100%
-  ); /* Thumb color */
+  background: rgba(255, 255, 255, 0.6); /* Thumb color */
   border-radius: 10px; /* Rounded corners for the thumb */
 }
 
@@ -51,9 +44,7 @@
   #about-text {
     font-size: 15px;
   }
-  #buttons {
-    width: 85%;
-  }
+  
   #project-div {
     margin-left: 0.5rem;
     margin-right: 0.5rem;

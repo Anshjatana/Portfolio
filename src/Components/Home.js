@@ -4,18 +4,17 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Download } from "lucide-react";
 import resume from "../assets/Resume.pdf";
 
-
 const Home = () => {
   const [text] = useTypewriter({
-    words: ["Frontend developer", "React.js developer" , "Next.js developer"],
+    words: ["Frontend developer", "Next.js developer", "React.js developer"],
     loop: {},
     typeSpeed: 80,
     deleteSpeed: 50,
   });
 
   return (
-    <div className="h-[600px]" id="home">
-      <div className="text-white w-[45%] absolute top-[190px] left-[100px]">
+    <div className="h-[500px]" id="home">
+      <div className="text-white w-[45%] absolute top-[130px] left-[100px]">
         <h1 className="text-[45px] font-semibold text-[#ff0044]" id="greeting">
           Hello!
         </h1>
@@ -33,7 +32,10 @@ const Home = () => {
         </h3>
 
         <p className="text-[18px] my-4 text-[lightgray]" id="about-me">
-        Proficient in HTML, CSS, JavaScript, React.js, and exploring Next.js, TypeScript. Specialize in crafting user-centric websites. Excited for collaborative challenges with professionals.
+          Proficient in frontend development technologies including React.js,
+          Next.js, JavaScript, and TypeScript, while also delving into backend
+          technologies to broaden expertise and contribute holistically to web
+          development projects
         </p>
         <a href={resume} download="Resume">
           <button
@@ -46,7 +48,7 @@ const Home = () => {
         </a>
       </div>
       <div
-        className="relative top-[200px] float-right right-[150px]"
+        className="relative top-[165px] float-right right-[130px]"
         id="hero-img"
       >
         <img

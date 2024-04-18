@@ -40,17 +40,17 @@ const Contact = () => {
         Get in touch
       </h3>
       <div
-        className="flex items-center justify-evenly mx-[290px] "
+        className="flex items-center gap-4 justify-center mx-auto "
         id="contacts"
       >
-        <p className="text-[22px] font-medium font-[sans-serif]  items-center justify-center mt-2 text-white flex">
+        <a href="mailto:anshjatana1111@gmail.com" className="text-[22px] font-medium font-[sans-serif]  items-center justify-center mt-2 text-white flex">
           <Mail size={30} color="paleturquoise" id="icon" className="mr-2" />
           anshjatana1111@gmail.com
-        </p>
-        <p className="text-[24px] font-medium font-[sans-serif]  items-center justify-center mt-4 text-white flex">
+        </a>
+        <a href="tel:+918168318198" className="text-[24px] font-medium font-[sans-serif]  items-center justify-center mt-4 text-white flex">
           <PhoneCall color="paleturquoise" size={30} id="icon" className="mr-2" />
           +918168318198
-        </p>
+        </a>
       </div>
 
       <form

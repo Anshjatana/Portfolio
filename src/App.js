@@ -5,6 +5,7 @@ import About from './Components/About';
 import Projects from './Components/Projects';
 import Footer from './Components/Footer';
 import Contact from './Components/Contact';
+import Experience from './Components/Experience';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <div style={divStyle} className='h-full'>
         <Home />
         <About />
+        <Experience/>
         <Projects />
         <Contact/>
         <Footer />
