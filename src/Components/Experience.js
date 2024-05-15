@@ -49,12 +49,13 @@ const Experience = () => {
               className="w-[36px]"
               alt="wardrollLogo"
             />
-            <a href="https://www.wardroll.com" target="blank" ><p
-              className="text-[22px] font-semibold text-center mt-2 text-white "
-              id="exp-line"
-            >
-              Wardroll Pvt. Ltd.
-            </p>
+            <a href="https://www.wardroll.com" target="blank">
+              <p
+                className="text-[22px] font-semibold text-center mt-2 text-white "
+                id="exp-line"
+              >
+                Wardroll Pvt. Ltd.
+              </p>
             </a>
           </div>
           <div className="flex items-center justify-center gap-3 mt-6">
@@ -75,10 +76,14 @@ const Experience = () => {
           </p>
           <div className="mt-4 mx-auto w-[70%] text-center flex flex-col items-center justify-center  ">
             <li className="text-[17px] font-normal text-center mt-2 text-white">
-              Led entire UI development using latest trending stack including
-              Next.js, TypeScript, Material UI, and Tailwind CSS, collaborating
-              closely with the CTO to ensure alignment with strategic goals and
-              best practices.
+              Joined Wardroll as Founding member, leading frontend development
+              from scratch, aligning with strategic goals and industry best
+              practices in close collaboration with the CTO.
+            </li>
+            <li className="text-[17px] font-normal text-center mt-2 text-white">
+              Took charge of the UI development, diving into the latest tech
+              like Next.js, TypeScript, Material UI, and Tailwind CSS with
+              eagerness and determination
             </li>
             <li className="text-[17px] font-normal text-center mt-2 text-white">
               Ensured scalability, integrated Meta APIs, and upheld top-tier

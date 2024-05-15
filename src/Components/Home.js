@@ -19,7 +19,7 @@ const Home = () => {
           Hello!
         </h1>
         <h2 className="text-[40px] font-bold" id="Name">
-          I'm Ansh Jatana,
+          I'm Ansh Jatana
         </h2>
         <h3 className="text-[30px] text-[paleturquoise]" id="profile">
           A{" "}
