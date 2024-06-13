@@ -3,7 +3,7 @@ import { ArrowRight, Link, Github } from "lucide-react";
 import CollegeWebsite from "../assets/CollegeWebsite.avif";
 import ExpenseApp from "../assets/Expense-app.avif";
 import CryptoBazar from "../assets/CryptoBazar.avif";
-import NinjaStudio from "../assets/NinjaStudio.avif";
+// import NinjaStudio from "../assets/NinjaStudio.avif";
 
 const projects = [
   {
