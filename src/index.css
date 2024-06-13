@@ -44,15 +44,12 @@
   #about-text {
     font-size: 15px;
   }
-  
+
   #project-div {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
-  #project-img13 {
-    width: 45%;
-  }
-  #project-img24 {
+  #project-image {
     width: 45%;
   }
   #project-text {
@@ -144,7 +141,7 @@
   #hero-img {
     right: 30px;
     width: 170px;
-}
+  }
   #greeting {
     font-size: 30px;
   }
@@ -194,15 +191,10 @@
   #project-div {
     flex-direction: column;
   }
-  #Project-heading{
+  #Project-heading {
     font-size: 1.3rem;
   }
-  #project-img13 {
-    width: 75%;
-    margin-top: 1.5rem;
-    margin-left: 0px;
-  }
-  #project-img24 {
+  #project-image {
     width: 75%;
     margin-top: 1.5rem;
     margin-left: 0px;
@@ -232,8 +224,17 @@
   #contact form label {
     font-size: 15px;
   }
+  #footer-div {
+    font-size: 15px;
+    gap: 6px;
+    margin-top: 4px;
+    flex-direction: column;
+  }
   #contacts p {
     font-size: 15px;
+  }
+  #role-description li {
+    font-size: 14px;
   }
 }
 
@@ -246,47 +247,41 @@
     width: 72%;
     left: 14%;
     text-align: center;
-}
-#download-btn {
-  font-size: 11px;
-  padding: 5px;
-  margin: auto;
-}
+  }
+  #download-btn {
+    font-size: 11px;
+    padding: 5px;
+    margin: auto;
+  }
   #home {
     height: 420px;
   }
   #about-div {
     flex-direction: column;
     text-align: center;
-}
-#about-text div {
-  width: 75%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#Project-heading{
-  font-size: 1.5rem;
-}
-#project-text {
+  }
+  #about-text div {
+    width: 75%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #Project-heading {
+    font-size: 1.5rem;
+  }
+  #project-text {
     width: 80%;
     text-align: center;
-}
-.icons {
-  width: 45px;
-}
+  }
+  .icons {
+    width: 45px;
+  }
   #about-text {
     width: 75%;
   }
-  #footer-div {
-    font-size: 15px;
-    flex-direction: column;
-  }
-  #project-img13 {
-    width: 70%;
-  }
-  #project-img24 {
-    width: 70%;
+
+  #project-image {
+    width: 80%;
   }
 }

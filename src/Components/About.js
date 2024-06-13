@@ -2,9 +2,6 @@ import React from "react";
 import memoji from "../assets/memoji.webp";
 import { Linkedin, Github, Instagram, Twitter } from "lucide-react";
 
-
-
-
 const About = () => {
   return (
     <div className="flex flex-col items-center justify-center mt-8" id="about">

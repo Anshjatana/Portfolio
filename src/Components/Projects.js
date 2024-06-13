@@ -29,6 +29,7 @@ const projects = [
     ],
     liveURL: "https://expense-tracker-ansh.netlify.app/",
     githubURL: "https://github.com/Anshjatana/Expense-Tracker-app",
+    reverse: true,
   },
   {
     name: "College website",
@@ -42,19 +43,20 @@ const projects = [
     liveURL: "https://arsd-dummy-ansh.netlify.app/",
     githubURL: "https://github.com/Anshjatana/CollegeWebsite",
   },
-  {
-    name: "Ninja Studio",
-    image: NinjaStudio,
-    technologies: "HTML, CSS, JavaScript, Bootstrap",
-    description: [
-      "Created Home Screen Carousel using HTMl, CSS, JS",
-      "Added favourite and recent played songs sections using JavaScript functions",
-      "Added play/pause and next/previous functionality to the player section.",
-      "Ensured good code quality in terms of using classes, proper names for classes/variables.",
-    ],
-    liveURL: "https://ninjastudio-ansh.netlify.app/",
-    githubURL: "https://github.com/Anshjatana/NINJA-STUDIO-HTML-CSS-JS",
-  },
+  // {
+  //   name: "Ninja Studio",
+  //   image: NinjaStudio,
+  //   technologies: "HTML, CSS, JavaScript, Bootstrap",
+  //   description: [
+  //     "Created Home Screen Carousel using HTMl, CSS, JS",
+  //     "Added favourite and recent played songs sections using JavaScript functions",
+  //     "Added play/pause and next/previous functionality to the player section.",
+  //     "Ensured good code quality in terms of using classes, proper names for classes/variables.",
+  //   ],
+  //   liveURL: "https://ninjastudio-ansh.netlify.app/",
+  //   githubURL: "https://github.com/Anshjatana/NINJA-STUDIO-HTML-CSS-JS",
+  //   reverse: true,
+  // },
 ];
 
 const Projects = () => {
@@ -76,14 +78,16 @@ const Projects = () => {
       {projects.map((project, index) => (
         <div
           key={index}
-          className="flex justify-evenly my-16 mx-10 items-center"
+          className={`flex ${project.reverse ? "flex-row-reverse" : ""} justify-evenly my-16 mx-10 items-center`}
           id="project-div"
         >
-            <img
+            <a href={project.liveURL} target="_blank" rel="noreferrer" id="project-image" className="w-[47%]" ><img
               src={project.image}
               alt={project.name}
-              className="w-[47%] rounded-md hover:scale-105 duration-200"
+              
+              className=" rounded-md hover:scale-105 duration-200"
             />
+            </a>
           <div
             className="text-white text-[16px] w-[42%] mt-8"
             id="project-text"
@@ -95,8 +99,8 @@ const Projects = () => {
               Technology used: {project.technologies}
             </p>
             {project.description.map((desc, idx) => (
-              <p key={idx} className="flex mt-2">
-                <ArrowRight />
+              <p key={idx} className="flex mt-3 ">
+                <ArrowRight className="mr-2" />
                 {desc}
               </p>
             ))}

@@ -74,7 +74,7 @@ const Experience = () => {
           <p className="text-[20px] font-medium text-center mt-2 text-white">
             Frontend Developer Intern
           </p>
-          <div className="mt-4 mx-auto w-[70%] text-center flex flex-col items-center justify-center  ">
+          <div id="role-description" className="mt-4 mx-auto w-[70%] text-center flex flex-col items-center justify-center  ">
             <li className="text-[17px] font-normal text-center mt-2 text-white">
               Joined Wardroll as Founding member, leading frontend development
               from scratch, aligning with strategic goals and industry best
@@ -112,7 +112,7 @@ const Experience = () => {
           {technologies.map((tech, index) => (
             <button
               key={index}
-              className="hover:bg-white gap-1 hover:text-black  flex items-center p-1.5 px-2 m-3 font-semibold rounded-md bg-gray-900 text-white"
+              className="hover:bg-white gap-1 hover:text-black hover:scale-110 duration-200 flex items-center p-1.5 px-2 m-3 font-semibold rounded-md bg-gray-900 text-white"
             >
               <tech.Icon size={28} color={tech.color} id="icon" />
               {tech.name}

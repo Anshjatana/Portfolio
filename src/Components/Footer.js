@@ -19,13 +19,9 @@ const Footer = () => {
       id: 4,
       link: "projects",
     },
-    {
-      id: 5,
-      link: "contact",
-    },
   ];
   return (
-    <footer className=" w-full text-black bg-[#f7f7f7] h-40  px-6">
+    <footer className=" w-full text-black bg-[#fff] h-40  px-6">
       <div className="flex  items-center justify-between ">
         <div>
           <h1
@@ -49,7 +45,7 @@ const Footer = () => {
         </ul>
       </div>
       <hr className="w-[90%] m-auto border-black font-bold pt-6 " />
-      <p className="py-1 font-semibold text-lg text-center ">
+      <p className="my-1 font-semibold text-lg text-center ">
         Made in India with &#10084;
       </p>
     </footer>
