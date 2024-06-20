@@ -40,7 +40,7 @@ const Experience = () => {
           className="text-white text-[30px] font-semibold uppercase text-center mt-[100px]"
           id="heading"
         >
-          Experience
+          Work Experience
         </h3>
         <div className=" flex justify-around items-center ">
           <div className="flex items-center justify-center gap-3 mt-6">
@@ -76,18 +76,13 @@ const Experience = () => {
           </p>
           <div id="role-description" className="mt-4 mx-auto w-[70%] text-center flex flex-col items-center justify-center  ">
             <li className="text-[17px] font-normal text-center mt-2 text-white">
-              Joined Wardroll as Founding member, leading frontend development
-              from scratch, aligning with strategic goals and industry best
-              practices in close collaboration with the CTO.
+            Joined Wardroll as a Founding Member, pioneering frontend development from scratch. Aligned closely with strategic goals and industry best practices, ensuring Wardroll's technology stands at the pinnacle of innovation.
             </li>
             <li className="text-[17px] font-normal text-center mt-2 text-white">
-              Took charge of the UI development, diving into the latest tech
-              like Next.js, TypeScript, Material UI, and Tailwind CSS with
-              eagerness and determination
+            Took charge of UI development with an insatiable drive, mastering the latest tech stack including Next.js, TypeScript, Material UI, and Tailwind CSS. Demonstrated unwavering determination to elevate Wardroll's interface to unprecedented heights.
             </li>
             <li className="text-[17px] font-normal text-center mt-2 text-white">
-              Ensured scalability, integrated Meta APIs, and upheld top-tier
-              code standards for optimal performance and user experience.
+            Ensured Wardroll's success with a focus on scalability and performance. Expertly integrated Meta APIs while maintaining top-tier code standards, delivering an unparalleled user experience that sets a new industry standard.
             </li>
           </div>
         </div>

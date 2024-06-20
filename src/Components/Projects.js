@@ -3,17 +3,44 @@ import { ArrowRight, Link, Github } from "lucide-react";
 import CollegeWebsite from "../assets/CollegeWebsite.avif";
 import ExpenseApp from "../assets/Expense-app.avif";
 import CryptoBazar from "../assets/CryptoBazar.avif";
+import Wardroll from "../assets/Wardroll-Landing.avif";
+import GitPulse from "../assets/GitpulseLight.avif";
 // import NinjaStudio from "../assets/NinjaStudio.avif";
 
 const projects = [
   {
+    name: "Saas Product @Wardroll",
+    image: Wardroll,
+    technologies:
+      "Next.js, TypeScript, Material UI, Tailwind CSS, Sentri, Google Analytics",
+    description: [
+      "Spearheaded the UI development, enthusiastically mastering Next.js, TypeScript, Material UI, and Tailwind CSS to create a state-of-the-art interface.",
+      "Guaranteed scalability and seamless integration with Meta APIs, maintaining top-tier code standards to deliver peak performance and an exceptional user experience.",
+      "Pioneered the frontend development from the ground up, aligning with strategic objectives and industry best practices through close collaboration with the CTO.",
+    ],
+    liveURL: "https://www.wardroll.com",
+  },
+  {
+    name: "Git Pulse",
+    image: GitPulse,
+    technologies: "React.js, Tailwind CSS",
+    description: [
+      "Built a sleek web app with GitHub REST APIs, giving users a unique, personalized view of their GitHub data.",
+      "Created dazzling visuals for followers, repos, languages, and forks using top-tier libraries and tech.",
+      "Achieved seamless, fast access to complex GitHub data, setting new standards in web development.",
+    ],
+    liveURL: "https://gitpulse-anshh.netlify.app/",
+    githubURL: "https://github.com/Anshjatana/Git-Pulse",
+    reverse: true,
+  },
+  {
     name: "CryptoBazar",
     image: CryptoBazar,
-    technologies: "React.js, Tailwind CSS, CoinGecko APIs",
+    technologies: " React.js, Tailwind CSS, CoinGecko APIs, Express.js, WebSocket",
     description: [
-      "CryptoBazar presents a diverse selection of 10 cryptocurrencies on its homepage, offering real-time data and trends to users",
-      "Providing in-depth insights, it includes dedicated routes to individual coin pages, allowing users to study comprehensive market data for each cryptocurrency",
-      "Enhancing user experience, it offers both light and dark theme modes, ensuring accessibility and personalized preferences for every user.",
+      "CryptoBazar brings you a vibrant selection of 10 cryptocurrencies on its homepage, utilizing a WebSocket layer for real-time data and trends, keeping users at the forefront of the market action.",
+      "Delivers dedicated routes to individual coin pages, offering users in-depth, comprehensive market data for each cryptocurrency, enabling thorough analysis and informed investment decisions.",
+      "Transforms user engagement with customizable light and dark theme modes, ensuring accessibility and tailored preferences for every user, making your crypto journey seamless and enjoyable.",
     ],
     liveURL: "https://cryptobazar-ansh.netlify.app/",
     githubURL: "https://github.com/Anshjatana/CryptoBazar",
@@ -23,9 +50,9 @@ const projects = [
     image: ExpenseApp,
     technologies: "React.js, Tailwind CSS",
     description: [
-      "Created a small expense Tracker app where we can Create, edit and delete particular expense.",
-      "All the expenses can be filtered according to date.",
-      "Also we can search it by Expense name.",
+      "Developed a user-friendly app for creating, editing, and deleting expenses effortlessly.",
+      "Includes filtering by date and searching by expense name for precise expense tracking.",
+      "Offers a seamless user experience with an intuitive design, ensuring easy navigation and control over expenses.",
     ],
     liveURL: "https://expense-tracker-ansh.netlify.app/",
     githubURL: "https://github.com/Anshjatana/Expense-Tracker-app",
@@ -78,16 +105,24 @@ const Projects = () => {
       {projects.map((project, index) => (
         <div
           key={index}
-          className={`flex ${project.reverse ? "flex-row-reverse" : ""} justify-evenly my-16 mx-10 items-center`}
+          className={`flex ${
+            project.reverse ? "flex-row-reverse" : ""
+          } justify-evenly my-16 mx-10 items-center`}
           id="project-div"
         >
-            <a href={project.liveURL} target="_blank" rel="noreferrer" id="project-image" className="w-[47%]" ><img
+          <a
+            href={project.liveURL}
+            target="_blank"
+            rel="noreferrer"
+            id="project-image"
+            className="w-[47%]"
+          >
+            <img
               src={project.image}
               alt={project.name}
-              
               className=" rounded-md hover:scale-105 duration-200"
             />
-            </a>
+          </a>
           <div
             className="text-white text-[16px] w-[42%] mt-8"
             id="project-text"
@@ -106,7 +141,7 @@ const Projects = () => {
             ))}
             <br />
             <div
-              className="flex justify-evenly  w-[290px]"
+              className="flex justify-between  w-[290px]"
               id="project-buttons"
             >
               <a href={project.liveURL} target="blank">
@@ -115,12 +150,14 @@ const Projects = () => {
                   Live URL
                 </button>
               </a>
-              <a href={project.githubURL} target="blank">
-                <button className="flex items-center bg-white font-semibold p-1.5 text-black rounded-md hover:bg-gray-100 hover:scale-105 duration-200">
-                  <Github />
-                  GitHub Link
-                </button>
-              </a>
+              {project.githubURL && (
+                <a href={project.githubURL} target="blank">
+                  <button className="flex items-center bg-white font-semibold p-1.5 text-black rounded-md hover:bg-gray-100 hover:scale-105 duration-200">
+                    <Github />
+                    GitHub Link
+                  </button>
+                </a>
+              )}
             </div>
           </div>
         </div>
