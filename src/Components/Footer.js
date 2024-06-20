@@ -46,7 +46,7 @@ const Footer = () => {
       </div>
       <hr className="w-[90%] m-auto border-black font-bold pt-6 " />
       <p className="my-1 font-semibold text-lg text-center ">
-        Made in India with &#10084;
+        Made with ❤️ By <a href="https://github.com/Anshjatana" target="_blank" rel="noreferrer" >Ansh jatana</a>
       </p>
     </footer>
   );
