@@ -16,9 +16,8 @@ function App() {
   
   return (
     <>
-    {/* <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900"> */}
       <NavBar />
-      <div style={divStyle} className='h-full'>
+      <div style={divStyle} className='w-full h-full rounded-md bg-neutral-950 relative flex flex-col antialiased' >
         <Home />
         <About />
         <Experience/>
@@ -27,7 +26,7 @@ function App() {
         <Footer />
       </div>
       <BackgroundBeams/>
-      {/* </BackgroundGradient> */}
+      {/* </div> */}
       </>
   );
 }

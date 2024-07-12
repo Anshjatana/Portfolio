@@ -13,7 +13,8 @@ import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { BsGit } from "react-icons/bs";
-import { CardContainer, CardItem } from "./ui/3d-card";
+import { LampContainer } from "./ui/lamp";
+// import { motion } from "framer-motion";
 
 const technologies = [
   { Icon: AiFillHtml5, name: "HTML", color: "#E74625" },
@@ -35,8 +36,8 @@ const technologies = [
 
 const Experience = () => {
   return (
-    <div id="experience">
-      <div>
+    <div id="experience" className="h-full z-20" >
+      <div className="mb-4" >
         <h3
           className="text-white text-[30px] font-semibold uppercase text-center mt-[100px]"
           id="heading"
@@ -88,7 +89,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-      <div>
+      <LampContainer className={'pt-[530px] h-[300px] '} >
         <h3
           className="text-white text-[30px] font-semibold uppercase text-center mt-[80px]"
           id="heading"
@@ -106,18 +107,18 @@ const Experience = () => {
           id="buttons"
         >
           {technologies.map((tech, index) => (
-            <CardContainer className="inter-var"><CardItem
-            translateZ="50"
+            <div
               key={index}
-              className="hover:bg-white gap-1 hover:text-black hover:scale-110 duration-200 flex items-center p-1.5 px-2 m-3 font-semibold rounded-md bg-gray-900 text-white"
+              id="tech-button"
+              className="hover:bg-white gap-1 hover:text-black hover:scale-110 duration-200 flex items-center p-1.5 px-2 m-2 font-semibold rounded-md bg-gray-900 text-white"
             >
               <tech.Icon size={28} color={tech.color} id="icon" />
               {tech.name}
-            </CardItem>
-            </CardContainer>
+            </div>
+            
           ))}
         </div>
-      </div>
+      </LampContainer>
     </div>
   );
 };

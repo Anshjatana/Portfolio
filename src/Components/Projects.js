@@ -89,7 +89,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div id="projects">
+    <div id="projects" className="z-20" >
       <h3
         className="text-white text-[30px]  font-semibold uppercase text-center mt-20 "
         id="heading"
@@ -121,7 +121,7 @@ const Projects = () => {
             <CardContainer className="inter-var"><img
               src={project.image}
               alt={project.name}
-              className=" rounded-md "
+              className=" rounded-md hover:scale-110 duration-150 "
             /></CardContainer>
           </a>
           <div

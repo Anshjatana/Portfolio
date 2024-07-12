@@ -9,6 +9,7 @@
 @layer base {
   html {
     font-family: "Raleway", sans-serif;
+    z-index: 0;
   }
 }
 
@@ -136,11 +137,20 @@
     font-size: 40px;
   }
   #home {
-    height: 500px;
+    height: 400px;
   }
   #hero-img {
-    right: 30px;
-    width: 170px;
+    display: none;
+  }
+  #home div:first-child {
+    top: 119px;
+    width: 72%;
+    left: 14%;
+    text-align: center;
+  }
+  #download-btn {
+    font-size: 13px;
+    padding: 5px;
   }
   #greeting {
     font-size: 30px;
@@ -149,17 +159,13 @@
     font-size: 25px;
   }
   #profile {
-    font-size: 15px;
+    font-size: 16px;
   }
   #typewriter {
-    font-size: 15px;
+    font-size: 16px;
   }
   #about-me {
-    font-size: 11px;
-  }
-  #download-btn {
-    font-size: 11px;
-    padding: 5px;
+    font-size: 12px;
   }
   #download-icon {
     width: 17px;
@@ -249,7 +255,7 @@
     text-align: center;
   }
   #download-btn {
-    font-size: 11px;
+    font-size: 13px;
     padding: 5px;
     margin: auto;
   }
@@ -283,5 +289,9 @@
 
   #project-image {
     width: 80%;
+  }
+  #tech-button{
+    margin: 6px;
+    font-size: 12px;
   }
 }

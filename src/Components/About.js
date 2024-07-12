@@ -2,11 +2,11 @@ import React from "react";
 import memoji from "../assets/memoji.webp";
 import { Linkedin, Github, Instagram, Twitter } from "lucide-react";
 import { LinkPreview } from "./ui/link-preview";
-import { BackgroundBeams } from "./ui/background-beams";
+// import { Meteors } from "./ui/meteors";
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center justify-center mt-8" id="about">
+    <div className="flex flex-col z-20 items-center justify-center mt-8" id="about">
       <h6 className="text-white text-[15px] font-semibold uppercase text-center  ">
         Get to know
       </h6>
@@ -45,42 +45,47 @@ const About = () => {
             Lets Connect!
           </h3>
           <div className="flex justify-between items-center w-[200px] mt-6 ">
-          <LinkPreview url="https://www.linkedin.com/in/ansh-jatana-10b446205/">
-            <a
-              href="https://www.linkedin.com/in/ansh-jatana-10b446205/"
-              target="blank"
-            >
-              <button className="hover:scale-125 duration-200">
-                <Linkedin className="icons" />
-              </button>
-            </a>
+            <LinkPreview url="https://www.linkedin.com/in/ansh-jatana-10b446205/">
+              <a
+                href="https://www.linkedin.com/in/ansh-jatana-10b446205/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="hover:scale-125 duration-200">
+                  <Linkedin className="icons" />
+                </button>
+              </a>
             </LinkPreview>
             <LinkPreview url="https://github.com/Anshjatana">
-            <a href="https://github.com/Anshjatana" target="blank">
-              <button className="hover:scale-125 duration-200">
-                <Github className="icons" />
-              </button>
-            </a>
+              <a href="https://github.com/Anshjatana" target="_blank" rel="noreferrer">
+                <button className="hover:scale-125 duration-200">
+                  <Github className="icons" />
+                </button>
+              </a>
             </LinkPreview>
             <LinkPreview url="https://twitter.com/anshh_jatana">
-            <a href="https://twitter.com/anshh_jatana" target="blank">
-              <button className="hover:scale-125 duration-200">
-                <Twitter className="icons" />
-              </button>
-            </a>
+              <a href="https://twitter.com/anshh_jatana" target="_blank" rel="noreferrer">
+                <button className="hover:scale-125 duration-200">
+                  <Twitter className="icons" />
+                </button>
+              </a>
             </LinkPreview>
             <LinkPreview url="https://www.instagram.com/anshhhhjatana/">
-            <a href="https://www.instagram.com/anshhhhjatana/" target="blank">
-              <button className="hover:scale-125 duration-200">
-                <Instagram className="icons" />
-              </button>
-            </a>
+              <a
+                href="https://www.instagram.com/anshhhhjatana/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="hover:scale-125 duration-200">
+                  <Instagram className="icons" />
+                </button>
+              </a>
             </LinkPreview>
           </div>
         </div>
       </div>
-      <BackgroundBeams/>
-      </div>
+      {/* <BackgroundBeams/> */}
+    </div>
   );
 };
 

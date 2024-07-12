@@ -21,7 +21,7 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className=" w-full text-black bg-[#fff] h-40  px-6">
+    <footer className=" w-full text-black bg-[#fff] h-40 z-20 px-6">
       <div className="flex  items-center justify-between ">
         <div>
           <h1

@@ -14,7 +14,7 @@ const Home = () => {
   });
 
   return (
-    <div className="h-[500px]" id="home">
+    <div className="h-[500px] z-20" id="home">
       <div className="text-white w-[45%] absolute top-[130px] left-[100px]">
         <h1 className="text-[45px] font-semibold text-[#ff0044]" id="greeting">
           Hello!
@@ -38,9 +38,9 @@ const Home = () => {
           technologies to broaden expertise and contribute holistically to web
           development projects
         </p>
-        <a href={resume} className="hover:cursor-pointer z-20" download="Resume">
+        <a href={resume} className="hover:cursor-pointer z-100" download="Resume">
           <div
-            className="inline-flex h-12 animate-shimmer items-center justify-center rounded-lg bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-lightgray-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+            className="inline-flex h-12 animate-shimmer items-center justify-center rounded-lg bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 font-medium text-lightgray-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
             id="download-btn"
           >
             Download Resume

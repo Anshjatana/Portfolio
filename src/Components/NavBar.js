@@ -30,7 +30,7 @@ const NavBar = () => {
     },
   ];
   return (
-    <nav className="flex items-center justify-between w-full text-white z-20 fixed   bg-[rgb(4,8,17,0.8)] h-10 py-10 px-6">
+    <nav className="flex items-center justify-between w-full text-white z-30 fixed   bg-[rgb(4,8,17,0.8)] h-10 py-10 px-6">
       <h1
         className="font-signature m-6  text-5xl font-bold cursor-pointer hover:scale-110 duration-200 "
         id="logo"
@@ -57,7 +57,7 @@ const NavBar = () => {
         {nav ? <X size={30} /> : <Menu size={30} />}
       </div>
       {nav ? (
-        <ul className="flex sm:hidden  flex-col text-[#ffffffc7]  bg-[#010714ec] absolute py-2  items-center justify-center top-16 left-0 w-full ">
+        <ul className="flex sm:hidden  flex-col text-[#ffffffc7]  bg-[rgb(4,8,17,0.7)] absolute py-2  items-center justify-center top-16 left-0 w-full ">
           {array.map(({ id, link }) => (
             <li
               className="my-2 uppercase cursor-pointer hover:scale-125 duration-200"

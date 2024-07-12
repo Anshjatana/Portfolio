@@ -32,7 +32,7 @@ const Contact = () => {
   };
   
   return (
-    <div id="contact">
+    <div id="contact" className="z-20" >
       <h3
         className="text-white text-[30px] font-semibold uppercase text-center my-10"
         id="heading"
@@ -70,9 +70,9 @@ const Contact = () => {
             id="name"
             name="name"
             value={formData.name}
-            placeholder="Enter your Fullname"
+            placeholder="John Doe"
             onChange={handleChange}
-            className="border rounded-md p-2 w-[450px]"
+            className="bg-gray-800 text-white focus:border-none active:border-none rounded-md p-2 w-[450px]"
             required
           />
         </div>
@@ -88,9 +88,9 @@ const Contact = () => {
             id="email"
             name="email"
             value={formData.email}
-            placeholder="Enter your Email"
+            placeholder="doe.john11@gmail.com"
             onChange={handleChange}
-            className="border rounded-md p-2 w-[450px]"
+            className="bg-gray-800 text-white focus:border-none active:border-none rounded-md p-2 w-[450px]"
             required
           />
         </div>
@@ -106,9 +106,9 @@ const Contact = () => {
             id="subject"
             name="subject"
             value={formData.subject}
-            placeholder="Enter Subject here"
+            placeholder="Hey, Are you open for work?"
             onChange={handleChange}
-            className="border rounded-md p-2 w-[450px]"
+            className="bg-gray-800 text-white focus:border-none active:border-none rounded-md p-2 w-[450px]"
             required
           />
         </div>
@@ -124,8 +124,8 @@ const Contact = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="Enter Message here"
-            className="border rounded-md p-2 w-[450px] h-32"
+            placeholder="Lets connect for a quick call @11AM tomorrow!"
+            className="bg-gray-800 text-white focus:border-none active:border-none rounded-md p-2 w-[450px] h-32"
             required
           />
         </div>
