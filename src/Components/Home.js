@@ -3,6 +3,7 @@ import ProfileImg from "../assets/Profile.avif";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Download } from "lucide-react";
 import resume from "../assets/Resume.pdf";
+import { BackgroundGradient } from "./ui/background-gradient";
 
 const Home = () => {
   const [text] = useTypewriter({
@@ -37,25 +38,27 @@ const Home = () => {
           technologies to broaden expertise and contribute holistically to web
           development projects
         </p>
-        <a href={resume} download="Resume">
-          <button
-            className="bg-[ivory] text-black p-2 rounded-md font-semibold mt-2 flex items-center justify-center  hover:scale-105 duration-200"
+        <a href={resume} className="hover:cursor-pointer z-20" download="Resume">
+          <div
+            className="inline-flex h-12 animate-shimmer items-center justify-center rounded-lg bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-lightgray-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
             id="download-btn"
           >
-            <Download className="mr-2" id="download-icon" />
             Download Resume
-          </button>
+            <Download className="ml-2" id="download-icon" />
+          </div>
         </a>
       </div>
       <div
         className="relative top-[165px] float-right right-[130px]"
         id="hero-img"
       >
-        <img
-          src={ProfileImg}
-          alt="Profile img"
-          className="w-[300px] rounded-lg z-9"
-        />
+        <BackgroundGradient className="rounded-[22px] max-w-sm overflow-hidden bg-white dark:bg-zinc-900">
+          <img
+            src={ProfileImg}
+            alt="Profile img"
+            className="w-[300px] rounded-lg z-9"
+          />
+        </BackgroundGradient>
       </div>
     </div>
   );

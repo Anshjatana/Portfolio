@@ -132,8 +132,7 @@ const Contact = () => {
         <div>
           <button
             type="submit"
-            className="bg-blue-900 text-white py-2 px-4 rounded-md mb-10 hover:bg-blue-800"
-            
+            className="inline-flex h-12 animate-shimmer items-center justify-center rounded-lg bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
           >
             Lets Talk!
           </button>

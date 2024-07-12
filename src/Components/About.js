@@ -1,6 +1,8 @@
 import React from "react";
 import memoji from "../assets/memoji.webp";
 import { Linkedin, Github, Instagram, Twitter } from "lucide-react";
+import { LinkPreview } from "./ui/link-preview";
+import { BackgroundBeams } from "./ui/background-beams";
 
 const About = () => {
   return (
@@ -43,6 +45,7 @@ const About = () => {
             Lets Connect!
           </h3>
           <div className="flex justify-between items-center w-[200px] mt-6 ">
+          <LinkPreview url="https://www.linkedin.com/in/ansh-jatana-10b446205/">
             <a
               href="https://www.linkedin.com/in/ansh-jatana-10b446205/"
               target="blank"
@@ -51,25 +54,32 @@ const About = () => {
                 <Linkedin className="icons" />
               </button>
             </a>
+            </LinkPreview>
+            <LinkPreview url="https://github.com/Anshjatana">
             <a href="https://github.com/Anshjatana" target="blank">
               <button className="hover:scale-125 duration-200">
                 <Github className="icons" />
               </button>
             </a>
+            </LinkPreview>
+            <LinkPreview url="https://twitter.com/anshh_jatana">
             <a href="https://twitter.com/anshh_jatana" target="blank">
               <button className="hover:scale-125 duration-200">
                 <Twitter className="icons" />
               </button>
             </a>
+            </LinkPreview>
+            <LinkPreview url="https://www.instagram.com/anshhhhjatana/">
             <a href="https://www.instagram.com/anshhhhjatana/" target="blank">
               <button className="hover:scale-125 duration-200">
                 <Instagram className="icons" />
               </button>
             </a>
+            </LinkPreview>
           </div>
         </div>
       </div>
-     
+      <BackgroundBeams/>
       </div>
   );
 };

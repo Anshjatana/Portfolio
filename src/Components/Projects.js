@@ -5,6 +5,7 @@ import ExpenseApp from "../assets/Expense-app.avif";
 import CryptoBazar from "../assets/CryptoBazar.avif";
 import Wardroll from "../assets/Wardroll-Landing.avif";
 import GitPulse from "../assets/GitpulseLight.avif";
+import { CardContainer } from "./ui/3d-card";
 // import NinjaStudio from "../assets/NinjaStudio.avif";
 
 const projects = [
@@ -117,11 +118,11 @@ const Projects = () => {
             id="project-image"
             className="w-[47%]"
           >
-            <img
+            <CardContainer className="inter-var"><img
               src={project.image}
               alt={project.name}
-              className=" rounded-md hover:scale-105 duration-200"
-            />
+              className=" rounded-md "
+            /></CardContainer>
           </a>
           <div
             className="text-white text-[16px] w-[42%] mt-8"

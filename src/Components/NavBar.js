@@ -30,7 +30,7 @@ const NavBar = () => {
     },
   ];
   return (
-    <nav className="flex items-center justify-between w-full text-white z-10 fixed   bg-[#010714] h-10 py-10 px-6">
+    <nav className="flex items-center justify-between w-full text-white z-20 fixed   bg-[rgb(4,8,17,0.8)] h-10 py-10 px-6">
       <h1
         className="font-signature m-6  text-5xl font-bold cursor-pointer hover:scale-110 duration-200 "
         id="logo"
