@@ -2,11 +2,12 @@ import React from "react";
 import memoji from "../assets/memoji.webp";
 import { Linkedin, Github, Instagram, Twitter } from "lucide-react";
 import { LinkPreview } from "./ui/link-preview";
+import { CardContainer } from "./ui/3d-card";
 // import { Meteors } from "./ui/meteors";
 
 const About = () => {
   return (
-    <div className="flex flex-col z-20 items-center justify-center mt-8" id="about">
+    <div className="flex flex-col z-20 items-center justify-center mt-8 mb-14 sm:mb-2 " id="about">
       <h6 className="text-white text-[15px] font-semibold uppercase text-center  ">
         Get to know
       </h6>
@@ -17,7 +18,7 @@ const About = () => {
         About Me
       </h3>
       <div className="flex  items-center justify-evenly " id="about-div">
-        <img src={memoji} alt="memoji" className="h-[400px]" id="memoji" />
+      <CardContainer className="inter-var"><img src={memoji} alt="memoji" className="h-[400px]" id="memoji" /></CardContainer>
         <div
           className="text-white text-[17px] w-[50%]  mt-[60px] "
           id="about-text"

@@ -91,7 +91,7 @@ const Projects = () => {
   return (
     <div id="projects" className="z-20" >
       <h3
-        className="text-white text-[30px]  font-semibold uppercase text-center mt-20 "
+        className="text-white text-[30px]  font-semibold uppercase text-center mt-10 "
         id="heading"
       >
         Projects

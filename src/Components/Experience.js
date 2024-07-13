@@ -70,7 +70,7 @@ const Experience = () => {
           </div>
         </div>
         <div className="text-center mt-6 gap-4 ">
-          <p className="text-[22px] font-medium uppercase text-center mt-2 mb-6 text-[paleturquoise]">
+          <p className="text-[22px] font-medium text-center mt-2 mb-6 text-[paleturquoise]">
             Roles and responsibilities
           </p>
           <p className="text-[20px] font-medium text-center mt-2 text-white">
