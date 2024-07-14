@@ -15,20 +15,11 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, email, subject, message } = formData;
-    const response = fetch(
-      "https://portfolio-899b6-default-rtdb.firebaseio.com/Data.json",
-      { method: "POST", headers: { "Content-type": "application/json" },
-    body:JSON.stringify({
-      name, email, subject, message
-    }) }
-    );
-    if(response){
-      alert("Form submitted successfully")
-    }
-    setFormData(initialFormData)
+    // Form submission will be handled by Formsubmit.co
+    alert("Form submitted successfully");
+    setFormData(initialFormData);
   };
   
   return (
@@ -55,6 +46,8 @@ const Contact = () => {
 
       <form
         name="contact"
+        action="https://formsubmit.co/anshjatana1111@gmail.com"
+        method="POST"
         onSubmit={handleSubmit}
         className="space-y-4 my-10 flex flex-col items-center "
       >

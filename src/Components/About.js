@@ -45,29 +45,29 @@ const About = () => {
           >
             Lets Connect!
           </h3>
-          <div className="flex justify-between items-center w-[200px] mt-6 ">
+          <div className="flex justify-between text-white items-center w-[200px] mt-6 ">
             <LinkPreview url="https://www.linkedin.com/in/ansh-jatana-10b446205/">
               <a
                 href="https://www.linkedin.com/in/ansh-jatana-10b446205/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="hover:scale-125 duration-200">
-                  <Linkedin className="icons" />
+                <button className="hover:scale-125 text-white duration-200">
+                  <Linkedin className="icons text-white" />
                 </button>
               </a>
             </LinkPreview>
             <LinkPreview url="https://github.com/Anshjatana">
               <a href="https://github.com/Anshjatana" target="_blank" rel="noreferrer">
-                <button className="hover:scale-125 duration-200">
-                  <Github className="icons" />
+                <button className="hover:scale-125 text-white duration-200">
+                  <Github className="icons text-white" />
                 </button>
               </a>
             </LinkPreview>
             <LinkPreview url="https://twitter.com/anshh_jatana">
               <a href="https://twitter.com/anshh_jatana" target="_blank" rel="noreferrer">
-                <button className="hover:scale-125 duration-200">
-                  <Twitter className="icons" />
+                <button className="hover:scale-125 text-white duration-200">
+                  <Twitter className="icons text-white" />
                 </button>
               </a>
             </LinkPreview>
@@ -77,8 +77,8 @@ const About = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="hover:scale-125 duration-200">
-                  <Instagram className="icons" />
+                <button className="hover:scale-125 text-white duration-200">
+                  <Instagram className="icons text-white" />
                 </button>
               </a>
             </LinkPreview>
