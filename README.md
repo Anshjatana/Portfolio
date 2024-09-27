@@ -4,7 +4,7 @@ Welcome to my portfolio! This project showcases my work as a developer, highligh
 
 ## 🌟 Live Demo
 
-Check out the live portfolio here: [portfolio-anshh.netlify.app](https://portfolio-anshh.netlify.app/)
+Check out the live portfolio here: [Link](https://anshjatana.online)
 
 ## 🛠️ Technologies Used
 
