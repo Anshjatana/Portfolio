@@ -3,19 +3,21 @@ import ProfileImg from "../assets/Profile.avif";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Download } from "lucide-react";
 import resume from "../assets/Resume.pdf";
-import { BackgroundGradient } from "./ui/background-gradient";
+import { CardContainer } from "./ui/3d-card";
+// import { FlipWords } from "./ui/flip-words";
+// import { BackgroundGradient } from "./ui/background-gradient";
 
 const Home = () => {
   const [text] = useTypewriter({
     words: ["Frontend developer", "Next.js developer", "React.js developer"],
     loop: {},
-    typeSpeed: 80,
-    deleteSpeed: 50,
+    typeSpeed: 40,
+    deleteSpeed: 20,
   });
 
   return (
-    <div className="h-[500px] z-20" id="home">
-      <div className="text-white w-[45%] absolute top-[130px] left-[100px]">
+    <div className="flex items-center mb-16 mt-32 mx-10 justify-around z-20">
+      <div className="text-white w-[80%] text-center md:text-left sm:w-[60%]  ">
         <h1 className="text-[45px] font-semibold text-[#ff0044]" id="greeting">
           Hello!
         </h1>
@@ -32,11 +34,10 @@ const Home = () => {
           </span>
         </h3>
 
-        <p className="text-[18px] my-4 text-[lightgray]" id="about-me">
-          Proficient in frontend development technologies including React.js,
+        <p className="text-[18px] md:w-[60%]  my-4 text-[lightgray]" id="about-me">
+          Proficient in Frontend development technologies including React.js,
           Next.js, JavaScript, and TypeScript, while also delving into backend
-          technologies to broaden expertise and contribute holistically to web
-          development projects
+          technologies to broaden expertise and contribute holistically to SaaS products.
         </p>
         <a href={resume} className="hover:cursor-pointer z-100" download="Resume">
           <div
@@ -49,16 +50,17 @@ const Home = () => {
         </a>
       </div>
       <div
-        className="relative top-[165px] float-right right-[130px]"
-        id="hero-img"
+        className="w-[15vw] hidden md:flex items-center justify-center"
       >
-        <BackgroundGradient className="rounded-[22px] max-w-sm overflow-hidden bg-white dark:bg-zinc-900">
+        {/* <BackgroundGradient className="rounded-[22px] max-w-sm overflow-hidden bg-white dark:bg-zinc-900"> */}
+        <CardContainer className="inter-var">
           <img
             src={ProfileImg}
             alt="Profile img"
-            className="w-[300px] rounded-lg z-9"
+            className="rounded-xl z-9"
           />
-        </BackgroundGradient>
+          </CardContainer>
+        {/* </BackgroundGradient> */}
       </div>
     </div>
   );

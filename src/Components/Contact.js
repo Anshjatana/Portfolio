@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Mail, PhoneCall } from "lucide-react";
+import { Mail } from "lucide-react";
 
 const Contact = () => {
   const initialFormData = {
@@ -38,10 +38,6 @@ const Contact = () => {
           <Mail size={30} color="paleturquoise" id="icon" className="mr-2" />
           anshjatana1111@gmail.com
         </a>
-        <a href="tel:+918168318198" className="text-[24px] font-medium font-[sans-serif]  items-center justify-center mt-4 text-white flex">
-          <PhoneCall color="paleturquoise" size={30} id="icon" className="mr-2" />
-          +918168318198
-        </a>
       </div>
 
       <form
@@ -65,7 +61,7 @@ const Contact = () => {
             value={formData.name}
             placeholder="John Doe"
             onChange={handleChange}
-            className="bg-gray-800 text-white focus:border-none active:border-none rounded-md p-2 w-[450px]"
+            className="bg-slate-900 text-white focus:border-none active:border-none rounded-md p-2 w-[450px]"
             required
           />
         </div>
@@ -83,7 +79,7 @@ const Contact = () => {
             value={formData.email}
             placeholder="doe.john11@gmail.com"
             onChange={handleChange}
-            className="bg-gray-800 text-white focus:border-none active:border-none rounded-md p-2 w-[450px]"
+            className="bg-slate-900 text-white focus:border-none active:border-none rounded-md p-2 w-[450px]"
             required
           />
         </div>
@@ -101,7 +97,7 @@ const Contact = () => {
             value={formData.subject}
             placeholder="Hey, Are you open for work?"
             onChange={handleChange}
-            className="bg-gray-800 text-white focus:border-none active:border-none rounded-md p-2 w-[450px]"
+            className="bg-slate-900 text-white focus:border-none active:border-none rounded-md p-2 w-[450px]"
             required
           />
         </div>
@@ -118,7 +114,7 @@ const Contact = () => {
             value={formData.message}
             onChange={handleChange}
             placeholder="Lets connect for a quick call @11AM tomorrow!"
-            className="bg-gray-800 text-white focus:border-none active:border-none rounded-md p-2 w-[450px] h-32"
+            className="bg-slate-900 text-white focus:border-none active:border-none rounded-md p-2 w-[450px] h-32"
             required
           />
         </div>

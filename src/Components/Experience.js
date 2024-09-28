@@ -36,8 +36,8 @@ const technologies = [
 
 const Experience = () => {
   return (
-    <div id="experience" className="h-full z-20" >
-      <div className="mb-4" >
+    <div id="experience" className="h-full z-20">
+      <div className="mb-4">
         <h3
           className="text-white text-[30px] font-semibold uppercase text-center mt-[100px]"
           id="heading"
@@ -65,7 +65,7 @@ const Experience = () => {
               className="text-[22px] font-medium text-center mt-2 text-white "
               id="exp-line"
             >
-              (Dec, 2023 - Present)
+              (January, 2024 - Present)
             </p>
           </div>
         </div>
@@ -76,20 +76,31 @@ const Experience = () => {
           <p className="text-[20px] font-medium text-center mt-2 text-white">
             Frontend Developer Intern
           </p>
-          <div id="role-description" className="mt-4 mx-auto w-[70%] text-center flex flex-col items-center justify-center  ">
-            <li className="text-[17px] font-normal text-center mt-2 text-white">
-            Joined Wardroll as a Founding Member, pioneering frontend development from scratch. Aligned closely with strategic goals and industry best practices, ensuring Wardroll's technology stands at the pinnacle of innovation.
+          <div
+            id="role-description"
+            className="mt-4 mx-auto w-[85%] sm:w-[70%] text-[12px] sm:text-[14px] md:text-[17px] text-center flex flex-col items-center justify-center  "
+          >
+            <li className="font-normal text-center mt-2 text-white">
+              Led 90% of the frontend development of Wardroll's B2B SaaS product
+              from scratch as the Founding Frontend Engineer, while also
+              contributing to backend microservices to ensure high code quality
+              and alignment with business needs.
             </li>
-            <li className="text-[17px] font-normal text-center mt-2 text-white">
-            Took charge of UI development with an insatiable drive, mastering the latest tech stack including Next.js, TypeScript, Material UI, and Tailwind CSS. Demonstrated unwavering determination to elevate Wardroll's interface to unprecedented heights.
+            <li className="font-normal text-center mt-2 text-white">
+              Spearheaded the launch of amazing features, including personal
+              affiliate links for fashion creators and Auto-DM functionalities,
+              enhancing user engagement and creator monetization on the platform
             </li>
-            <li className="text-[17px] font-normal text-center mt-2 text-white">
-            Ensured Wardroll's success with a focus on scalability and performance. Expertly integrated Meta APIs while maintaining top-tier code standards, delivering an unparalleled user experience that sets a new industry standard.
+            <li className="font-normal text-center mt-2 text-white">
+              Drove the development of Wardroll's user interface with a focus on
+              innovation and scalability, seamlessly integrating advanced
+              features that enhance user engagement and set new standards in the
+              fashion tech industry
             </li>
           </div>
         </div>
       </div>
-      <LampContainer className={'pt-[530px] h-[300px] '} >
+      <LampContainer className={'bg-black pt-[562px] h-[300px] '} >
         <h3
           className="text-white text-[30px] font-semibold uppercase text-center mt-[80px]"
           id="heading"
@@ -115,7 +126,6 @@ const Experience = () => {
               <tech.Icon size={28} color={tech.color} id="icon" />
               {tech.name}
             </div>
-            
           ))}
         </div>
       </LampContainer>

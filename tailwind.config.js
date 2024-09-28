@@ -1,7 +1,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
- 
+
 const svgToDataUri = require("mini-svg-data-uri");
- 
+
 const colors = require("tailwindcss/colors");
 
 const {
@@ -10,8 +10,8 @@ const {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}",],
- theme: {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
     extend: {
       animation: {
         shimmer: "shimmer 2s linear infinite",
@@ -35,11 +35,12 @@ module.exports = {
         },
       },
     },
-    fontFamily:{
-          signature: ['Megrim'],
-    }, 
+    fontFamily: {
+      signature: ["Megrim"],
+    },
   },
-  plugins: [addVariablesForColors,
+  plugins: [
+    addVariablesForColors,
     function ({ matchUtilities, theme }) {
       matchUtilities(
         {
@@ -70,9 +71,8 @@ function addVariablesForColors({ addBase, theme }) {
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });
 }
-

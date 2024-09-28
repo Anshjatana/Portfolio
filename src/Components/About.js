@@ -3,11 +3,15 @@ import memoji from "../assets/memoji.webp";
 import { Linkedin, Github, Instagram, Twitter } from "lucide-react";
 import { LinkPreview } from "./ui/link-preview";
 import { CardContainer } from "./ui/3d-card";
+// import { FlipWords } from "./ui/flip-words";
 // import { Meteors } from "./ui/meteors";
 
 const About = () => {
   return (
-    <div className="flex flex-col z-20 items-center justify-center mt-8 mb-14 sm:mb-2 " id="about">
+    <div
+      className="flex flex-col z-20 items-center justify-center mt-8 mb-14 sm:mb-2 "
+      id="about"
+    >
       <h6 className="text-white text-[15px] font-semibold uppercase text-center  ">
         Get to know
       </h6>
@@ -18,32 +22,33 @@ const About = () => {
         About Me
       </h3>
       <div className="flex  items-center justify-evenly " id="about-div">
-      <CardContainer className="inter-var"><img src={memoji} alt="memoji" className="h-[400px]" id="memoji" /></CardContainer>
+        <CardContainer className="inter-var">
+          <img src={memoji} alt="memoji" className="h-[400px]" id="memoji" />
+        </CardContainer>
         <div
           className="text-white text-[17px] w-[50%]  mt-[60px] "
           id="about-text"
         >
           <p>
-            Every day, I enjoy discovering new ways to make websites shine. Even
-            though I didn't begin with tech knowledge, I've taught myself to
-            code, and now I'm skilled at it. I utilize tools like Material UI,
-            Shad CN, and Tailwind CSS to enhance websites' appeal, while also
-            employing Next.js, TypeScript, React.js, and JavaScript to ensure
-            good quality code.
+            I'm a self-taught Developer with expertise in React.js, Next.js, and
+            TypeScript. I focus on creating intuitive, seamless user experiences
+            while also exploring backend development and DevOps. As the founding
+            frontend engineer at Wardroll, I played a key role in building their
+            B2B SaaS platform from the ground up.
           </p>
           <br />
           <p>
-            I focus on user experience, customizing every part of the website
-            for seamless interaction. Exploring backend tech like Cloudflare
-            workers, AWS deployment, Docker, and Nginx keeps me up-to-date. My
-            curiosity fuels my drive to learn and grow in technology.
+            Driven by a passion for innovation, I love tackling new challenges
+            and pushing boundaries in tech. With projects like GitPulse and
+            MelodyVerse under my belt, I'm always looking for ways to enhance
+            user engagement and deliver impactful, scalable solutions.
           </p>
           <br />
           <h3
             className="text-[30px] font-semibold text-[paleturquoise]"
             id="lets-connect"
           >
-            Lets Connect!
+            Lets Catch Up!
           </h3>
           <div className="flex justify-between text-white items-center w-[200px] mt-6 ">
             <LinkPreview url="https://www.linkedin.com/in/ansh-jatana-10b446205/">
@@ -58,14 +63,22 @@ const About = () => {
               </a>
             </LinkPreview>
             <LinkPreview url="https://github.com/Anshjatana">
-              <a href="https://github.com/Anshjatana" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/Anshjatana"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="hover:scale-125 text-white duration-200">
                   <Github className="icons text-white" />
                 </button>
               </a>
             </LinkPreview>
             <LinkPreview url="https://twitter.com/anshh_jatana">
-              <a href="https://twitter.com/anshh_jatana" target="_blank" rel="noreferrer">
+              <a
+                href="https://twitter.com/anshh_jatana"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="hover:scale-125 text-white duration-200">
                   <Twitter className="icons text-white" />
                 </button>

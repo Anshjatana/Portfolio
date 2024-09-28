@@ -11,7 +11,7 @@ import { BackgroundBeams } from './Components/ui/background-beams';
 
 function App() {
   const divStyle = {
-    background: "rgba(4,8,17)"
+    background: "black"
   };
   
   return (

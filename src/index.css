@@ -19,7 +19,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(1, 7, 20, 1); /* Track background color */
+  background: black /* Track background color */
 }
 
 ::-webkit-scrollbar-thumb:hover {
