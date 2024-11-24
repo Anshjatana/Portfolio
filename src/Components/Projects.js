@@ -3,14 +3,14 @@ import { ArrowRight, Link, Github} from "lucide-react";
 import { CardContainer } from "./ui/3d-card";
 
 const ProjectCDNUrl ={
-  Wardroll: "https://res.cloudinary.com/dywhcxdix/video/upload/v1732440414/Portfolio_assets/isgw3pulsrrcs2cspgfv.mov",
-  Booksmart: "https://res.cloudinary.com/dywhcxdix/image/upload/v1732440391/Portfolio_assets/ca9f5qskdlldth6enk6x.png",
-  GitPulse: "https://res.cloudinary.com/dywhcxdix/video/upload/v1732440407/Portfolio_assets/abuvd8d8bjdd9gaigkxu.mov",
-  Melodyverse: "https://res.cloudinary.com/dywhcxdix/video/upload/v1732440389/Portfolio_assets/p5kevxijpfkvi6bp56de.mov",
-  CryptoBazar: "https://res.cloudinary.com/dywhcxdix/video/upload/v1732440417/Portfolio_assets/mnvdlpc2953jxh9k48zr.mov",
+  Wardroll: "https://res.cloudinary.com/dywhcxdix/video/upload/f_auto:video,q_auto/v1/Portfolio_assets/isgw3pulsrrcs2cspgfv",
+  GitPulse: "https://res.cloudinary.com/dywhcxdix/video/upload/f_auto:video,q_auto/v1/Portfolio_assets/abuvd8d8bjdd9gaigkxu",
+  npmPackage: "https://res.cloudinary.com/dywhcxdix/video/upload/f_auto:video,q_auto/v1/Portfolio_assets/y1vri0bl8uhcltoin9oi",
+  Melodyverse: "https://res.cloudinary.com/dywhcxdix/video/upload/f_auto:video,q_auto/v1/Portfolio_assets/p5kevxijpfkvi6bp56de",
+  CryptoBazar: "https://res.cloudinary.com/dywhcxdix/video/upload/f_auto:video,q_auto/v1/Portfolio_assets/mnvdlpc2953jxh9k48zr",
   TaskTrek: "https://res.cloudinary.com/dywhcxdix/image/upload/v1732440374/Portfolio_assets/knmu0fri68fplquxqgiq.jpg",
+  Booksmart: "https://res.cloudinary.com/dywhcxdix/image/upload/v1732440391/Portfolio_assets/ca9f5qskdlldth6enk6x.png",
   ExpenseApp: "https://res.cloudinary.com/dywhcxdix/image/upload/v1732440390/Portfolio_assets/axwi87hfoc0u80brs7un.avif",
-  npmPackage: "https://res.cloudinary.com/dywhcxdix/video/upload/v1732440412/Portfolio_assets/y1vri0bl8uhcltoin9oi.mov",
 }
 
 const projects = [
