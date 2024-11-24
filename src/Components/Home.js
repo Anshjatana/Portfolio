@@ -1,5 +1,4 @@
 import React from "react";
-import ProfileImg from "../assets/Profile.avif";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Download } from "lucide-react";
 import resume from "../assets/Resume.pdf";
@@ -55,7 +54,7 @@ const Home = () => {
         {/* <BackgroundGradient className="rounded-[22px] max-w-sm overflow-hidden bg-white dark:bg-zinc-900"> */}
         <CardContainer className="inter-var">
           <img
-            src={ProfileImg}
+            src={'https://res.cloudinary.com/dywhcxdix/image/upload/v1732440384/Portfolio_assets/y5gvidf48toxhkgr2xlu.jpg'}
             alt="Profile img"
             className="rounded-xl z-9"
           />
