@@ -1,19 +1,22 @@
 import React from "react";
-import { ArrowRight, Link, Github } from "lucide-react";
-import ExpenseApp from "../assets/Expense-app.avif";
-import CryptoBazar from "../assets/cryptobazar.mov";
-import Wardroll from "../assets/wardroll.mov";
-import Melodyverse from "../assets/melodyverse.mov";
-import Booksmart from "../assets/Booksmart.avif";
-import GitPulse from "../assets/gitpulse.mov";
-import TaskTrek from "../assets/TaskTrek.jpeg";
+import { ArrowRight, Link, Github} from "lucide-react";
 import { CardContainer } from "./ui/3d-card";
-import npmPackage from "../assets/format-your-date.mov";
+
+const ProjectCDNUrl ={
+  Wardroll: "https://res.cloudinary.com/dywhcxdix/video/upload/v1732440414/Portfolio_assets/isgw3pulsrrcs2cspgfv.mov",
+  Booksmart: "https://res.cloudinary.com/dywhcxdix/image/upload/v1732440391/Portfolio_assets/ca9f5qskdlldth6enk6x.png",
+  GitPulse: "https://res.cloudinary.com/dywhcxdix/video/upload/v1732440407/Portfolio_assets/abuvd8d8bjdd9gaigkxu.mov",
+  Melodyverse: "https://res.cloudinary.com/dywhcxdix/video/upload/v1732440389/Portfolio_assets/p5kevxijpfkvi6bp56de.mov",
+  CryptoBazar: "https://res.cloudinary.com/dywhcxdix/video/upload/v1732440417/Portfolio_assets/mnvdlpc2953jxh9k48zr.mov",
+  TaskTrek: "https://res.cloudinary.com/dywhcxdix/image/upload/v1732440374/Portfolio_assets/knmu0fri68fplquxqgiq.jpg",
+  ExpenseApp: "https://res.cloudinary.com/dywhcxdix/image/upload/v1732440390/Portfolio_assets/axwi87hfoc0u80brs7un.avif",
+  npmPackage: "https://res.cloudinary.com/dywhcxdix/video/upload/v1732440412/Portfolio_assets/y1vri0bl8uhcltoin9oi.mov",
+}
 
 const projects = [
   {
     name: "Saas Product @Wardroll",
-    video: Wardroll,
+    video: ProjectCDNUrl.Wardroll,
     technologies:
       "Next.js, TypeScript, Material UI, Tailwind CSS, Sentri, Google Analytics",
     description: [
@@ -25,7 +28,7 @@ const projects = [
   },
   {
     name: "Git Pulse",
-    video: GitPulse,
+    video: ProjectCDNUrl.GitPulse,
     technologies: "React.js, Tailwind CSS, GitHub REST APIs, Chart.js, Axios",
     description: [
       "Built a sleek web app with GitHub REST APIs, giving users a unique, personalized view of their GitHub data.",
@@ -38,7 +41,7 @@ const projects = [
   },
   {
     name: "Format your Date",
-    video: npmPackage,
+    video: ProjectCDNUrl.npmPackage,
     technologies: "TypeScript, Node.js",
     description: [
       "Maintained and contributed the format-your-date package to the NPM registry, Reached 500+ downloads in the first week, showcasing its immediate utility.",
@@ -50,7 +53,7 @@ const projects = [
   },
   {
     name: "MelodyVerse",
-    video: Melodyverse,
+    video: ProjectCDNUrl.Melodyverse,
     technologies:
       "Next.js, Node.js, Express.js, Zustand, Tailwind CSS, MongoDB, JWT",
     description: [
@@ -63,7 +66,7 @@ const projects = [
   },
   {
     name: "CryptoBazar",
-    video: CryptoBazar,
+    video: ProjectCDNUrl.CryptoBazar,
     technologies:
       " React.js, Tailwind CSS, CoinGecko APIs, Express.js, WebSocket",
     description: [
@@ -76,7 +79,7 @@ const projects = [
   },
   {
     name: "Books Mart",
-    image: Booksmart,
+    image: ProjectCDNUrl.Booksmart,
     technologies: "Next.js, Zustand, Tailwind CSS, Lucid Icons",
     description: [
       "Books Mart is a Next.js-based e-commerce site featuring a responsive product grid, shopping cart system, and smooth UI/UX animations for a seamless shopping experience.",
@@ -88,7 +91,7 @@ const projects = [
   },
   {
     name: "TaskTrek",
-    image: TaskTrek,
+    image: ProjectCDNUrl.TaskTrek,
     technologies: "Next.js, Lucid Icons, Local Storage",
     description: [
       "TaskTrek organizes tasks into priority-based columns (High, Medium, Low) with features like adding, editing, deleting, searching, and marking tasks as complete. Completed tasks are visually distinct and displayed at the bottom of their priority lists.",
@@ -99,7 +102,7 @@ const projects = [
   },
   {
     name: "Expense Tracker App",
-    image: ExpenseApp,
+    image: ProjectCDNUrl.ExpenseApp,
     technologies: "React.js, Tailwind CSS",
     description: [
       "Developed a user-friendly app for creating, editing, and deleting expenses effortlessly.",

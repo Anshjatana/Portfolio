@@ -1,5 +1,4 @@
 import React from "react";
-import memoji from "../assets/memoji.webp";
 import { Linkedin, Github, Instagram, Twitter } from "lucide-react";
 import { LinkPreview } from "./ui/link-preview";
 import { CardContainer } from "./ui/3d-card";
@@ -23,7 +22,7 @@ const About = () => {
       </h3>
       <div className="flex  items-center justify-evenly " id="about-div">
         <CardContainer className="inter-var">
-          <img src={memoji} alt="memoji" className="h-[400px]" id="memoji" />
+          <img src={'https://res.cloudinary.com/dywhcxdix/image/upload/v1732440380/Portfolio_assets/ng9fm2fjwizm16hioyi7.webp'} alt="memoji" className="h-[400px]" id="memoji" />
         </CardContainer>
         <div
           className="text-white text-[17px] w-[50%]  mt-[60px] "
