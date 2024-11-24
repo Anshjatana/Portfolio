@@ -8,10 +8,13 @@ import {
   SiCanva,
   SiMui,
   SiExpress,
+  SiNestjs,
+  SiMongodb,
+  SiRedis,
 } from "react-icons/si";
 import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
 import { FaReact, FaNodeJs } from "react-icons/fa";
-import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandMysql, TbBrandNextjs } from "react-icons/tb";
 import { BsGit } from "react-icons/bs";
 import { LampContainer } from "./ui/lamp";
 // import { motion } from "framer-motion";
@@ -23,10 +26,14 @@ const technologies = [
   { Icon: FaReact, name: "React.js", color: "#50A6BD" },
   { Icon: TbBrandNextjs, name: "Next.js", color: "gray" },
   { Icon: BiLogoTypescript, name: "TypeScript", color: "#2F74C0" },
-  { Icon: SiMui, name: "Material UI", color: "#007FFF" },
   { Icon: SiRedux, name: "Redux", color: "#684CB2" },
   { Icon: FaNodeJs, name: "Node.js", color: "#90CA51" },
   { Icon: SiExpress, name: "Express.js", color: "#828282" },
+  { Icon: SiNestjs, name: "Nest.js", color: "#db214b" },
+  { Icon: TbBrandMysql, name: "MySql", color: "#016089" },
+  { Icon: SiMongodb, name: "MongoDB", color: "#12A952" },
+  { Icon: SiRedis, name: "Redis", color: "#C52F2C" },
+  { Icon: SiMui, name: "Material UI", color: "#007FFF" },
   { Icon: SiTailwindcss, name: "Tailwind CSS", color: "#42A7B1" },
   { Icon: SiBootstrap, name: "Bootstrap", color: "#543C7A" },
   { Icon: BsGit, name: "Git", color: "#EE5032" },
@@ -74,7 +81,7 @@ const Experience = () => {
             Roles and responsibilities
           </p>
           <p className="text-[20px] font-medium text-center mt-2 text-white">
-            Frontend Developer Intern
+            Software Development Engineer - 1
           </p>
           <div
             id="role-description"

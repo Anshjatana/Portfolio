@@ -1,20 +1,19 @@
 import React from "react";
 import { ArrowRight, Link, Github } from "lucide-react";
-// import CollegeWebsite from "../assets/CollegeWebsite.avif";
 import ExpenseApp from "../assets/Expense-app.avif";
-import CryptoBazar from "../assets/CryptoBazar.avif";
-import Wardroll from "../assets/Wardroll-Landing.avif";
-import Melodyverse from "../assets/MelodyVerse.avif";
+import CryptoBazar from "../assets/cryptobazar.mov";
+import Wardroll from "../assets/wardroll.mov";
+import Melodyverse from "../assets/melodyverse.mov";
 import Booksmart from "../assets/Booksmart.avif";
-import GitPulse from "../assets/GitpulseLight.avif";
+import GitPulse from "../assets/gitpulse.mov";
+import TaskTrek from "../assets/TaskTrek.jpeg";
 import { CardContainer } from "./ui/3d-card";
-import npmPackage from "../assets/npm.avif";
-// import NinjaStudio from "../assets/NinjaStudio.avif";
+import npmPackage from "../assets/format-your-date.mov";
 
 const projects = [
   {
     name: "Saas Product @Wardroll",
-    image: Wardroll,
+    video: Wardroll,
     technologies:
       "Next.js, TypeScript, Material UI, Tailwind CSS, Sentri, Google Analytics",
     description: [
@@ -26,20 +25,20 @@ const projects = [
   },
   {
     name: "Git Pulse",
-    image: GitPulse,
+    video: GitPulse,
     technologies: "React.js, Tailwind CSS, GitHub REST APIs, Chart.js, Axios",
     description: [
       "Built a sleek web app with GitHub REST APIs, giving users a unique, personalized view of their GitHub data.",
       "Created dazzling visuals for followers, repos, languages, and forks using top-tier libraries and tech.",
       "Achieved seamless, fast access to complex GitHub data, setting new standards in web development.",
     ],
-    liveURL: "https://gitpulse-anshh.netlify.app/",
+    liveURL: "https://gitpulse.anshjatana.online",
     githubURL: "https://github.com/Anshjatana/Git-Pulse",
     reverse: true,
   },
   {
     name: "Format your Date",
-    image: npmPackage,
+    video: npmPackage,
     technologies: "TypeScript, Node.js",
     description: [
       "Maintained and contributed the format-your-date package to the NPM registry, Reached 500+ downloads in the first week, showcasing its immediate utility.",
@@ -51,7 +50,7 @@ const projects = [
   },
   {
     name: "MelodyVerse",
-    image: Melodyverse,
+    video: Melodyverse,
     technologies:
       "Next.js, Node.js, Express.js, Zustand, Tailwind CSS, MongoDB, JWT",
     description: [
@@ -64,7 +63,7 @@ const projects = [
   },
   {
     name: "CryptoBazar",
-    image: CryptoBazar,
+    video: CryptoBazar,
     technologies:
       " React.js, Tailwind CSS, CoinGecko APIs, Express.js, WebSocket",
     description: [
@@ -72,7 +71,7 @@ const projects = [
       "With dedicated routes to individual coin pages, it provides detailed market insights for each cryptocurrency, empowering informed investment decisions.",
       "Customizable light and dark themes enhance user experience, offering accessibility and personalization for a seamless crypto journey.",
     ],
-    liveURL: "https://cryptobazar-ansh.netlify.app/",
+    liveURL: "https://cryptobazar.anshjatana.online",
     githubURL: "https://github.com/Anshjatana/CryptoBazar",
   },
   {
@@ -88,6 +87,17 @@ const projects = [
     reverse: true,
   },
   {
+    name: "TaskTrek",
+    image: TaskTrek,
+    technologies: "Next.js, Lucid Icons, Local Storage",
+    description: [
+      "TaskTrek organizes tasks into priority-based columns (High, Medium, Low) with features like adding, editing, deleting, searching, and marking tasks as complete. Completed tasks are visually distinct and displayed at the bottom of their priority lists.",
+      "With a responsive interface and tasks stored in local storage, TaskTrek ensures seamless usability across devices while retaining data between sessions.",
+    ],
+    liveURL: "https://expense-tracker-ansh.netlify.app/",
+    githubURL: "https://github.com/Anshjatana/Expense-Tracker-app",
+  },
+  {
     name: "Expense Tracker App",
     image: ExpenseApp,
     technologies: "React.js, Tailwind CSS",
@@ -98,33 +108,8 @@ const projects = [
     ],
     liveURL: "https://expense-tracker-ansh.netlify.app/",
     githubURL: "https://github.com/Anshjatana/Expense-Tracker-app",
+    reverse: true,
   },
-  // {
-  //   name: "College website",
-  //   image: CollegeWebsite,
-  //   technologies: "React.js, Tailwind CSS, Rapid APIs",
-  //   description: [
-  //     "Created a College dummy website using React.js and Tailwind CSS",
-  //     "Added Graphs using Fetch API, Table with filters and Cards using props.",
-  //     "Added Responsiveness by using Tailwind CSS Media Queries",
-  //   ],
-  //   liveURL: "https://arsd-dummy-ansh.netlify.app/",
-  //   githubURL: "https://github.com/Anshjatana/CollegeWebsite",
-  // },
-  // {
-  //   name: "Ninja Studio",
-  //   image: NinjaStudio,
-  //   technologies: "HTML, CSS, JavaScript, Bootstrap",
-  //   description: [
-  //     "Created Home Screen Carousel using HTMl, CSS, JS",
-  //     "Added favourite and recent played songs sections using JavaScript functions",
-  //     "Added play/pause and next/previous functionality to the player section.",
-  //     "Ensured good code quality in terms of using classes, proper names for classes/variables.",
-  //   ],
-  //   liveURL: "https://ninjastudio-ansh.netlify.app/",
-  //   githubURL: "https://github.com/Anshjatana/NINJA-STUDIO-HTML-CSS-JS",
-  //   reverse: true,
-  // },
 ];
 
 const Projects = () => {
@@ -160,11 +145,22 @@ const Projects = () => {
               className="w-[47%]"
             >
               <CardContainer className="inter-var">
-                <img
+                {project.video ? (<video
+                autoPlay
+                loop
+                src={project.video}
+                className="rounded-md hover:scale-110 duration-150"
+                muted // Consider adding muted for autoplay to work without user interaction
+                playsInline
+                onCanPlay={(e) => {
+                  e.target.playbackRate = 1.5; // Set playback speed to 1.5x
+                }}
+                />) : (
+                  <img
                   src={project.image}
                   alt={project.name}
-                  className=" rounded-md hover:scale-110 duration-150 "
-                />
+                  className="rounded-md hover:scale-110 duration-150"/>
+                )}
               </CardContainer>
             </a>
             <div
