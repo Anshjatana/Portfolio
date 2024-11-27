@@ -97,8 +97,8 @@ const projects = [
       "TaskTrek organizes tasks into priority-based columns (High, Medium, Low) with features like adding, editing, deleting, searching, and marking tasks as complete. Completed tasks are visually distinct and displayed at the bottom of their priority lists.",
       "With a responsive interface and tasks stored in local storage, TaskTrek ensures seamless usability across devices while retaining data between sessions.",
     ],
-    liveURL: "https://expense-tracker-ansh.netlify.app/",
-    githubURL: "https://github.com/Anshjatana/Expense-Tracker-app",
+    liveURL: "https://tasktrek-lovat.vercel.app/",
+    githubURL: "https://github.com/Anshjatana/tasktrek",
   },
   {
     name: "Expense Tracker App",
