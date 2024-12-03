@@ -23,6 +23,7 @@ function App() {
         <Experience/>
         <Projects />
         <Contact/>
+        {/* <ChatbotWidget/> */}
         <Footer />
       </div>
       <BackgroundBeams/>
